@@ -1,4 +1,4 @@
-import { Activity, Sparkles, Heart, Syringe, Pill, Stethoscope, Instagram, MessageCircle, MapPin } from "lucide-react";
+import { Activity, Sparkles, Heart, Syringe, Pill, Stethoscope, Instagram, MessageCircle, MapPin, Droplets } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import ServiceBanner from "@/components/ServiceBanner";
 
@@ -9,6 +9,7 @@ const services = [
   { icon: Syringe, label: "Terapias com Suplementos e Injetáveis" },
   { icon: Pill, label: "Terapias e Implantes Hormonais" },
   { icon: Stethoscope, label: "Acompanhamento Ginecológico" },
+  { icon: Droplets, label: "Tratamento de Lipedema" },
 ];
 
 const Index = () => {
