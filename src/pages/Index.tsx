@@ -3,7 +3,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 import ServiceBanner from "@/components/ServiceBanner";
 
 const services = [
-  { icon: Activity, label: "Emagrecimento Saudável | Os 4 pilares: Segurança, Disposição, Força e Beleza" },
+  { icon: Activity, label: "Emagrecimento com Saúde e Beleza" },
   { icon: Sparkles, label: "FF Sculpt (Remodelação Corporal)" },
   { icon: Heart, label: "Regeneração e Estética Íntima" },
   { icon: Syringe, label: "Terapias com Suplementos e Injetáveis" },
