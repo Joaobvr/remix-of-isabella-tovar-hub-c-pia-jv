@@ -36,7 +36,7 @@ const Index = () => {
           </p>
 
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Para proporcionar um cuidado feminino integral, Proponho diferentes tratamentos para a necessidade de cada mulher. Conheça os tratamentos disponíveis ou agende sua consulta.
+            Tratamentos para melhorar sua composição corporal, equilíbrio hormonal e metabólico. Porque sua saúde, autoconfiança e o prazer de viver tem muito valor.
           </p>
 
           <a
