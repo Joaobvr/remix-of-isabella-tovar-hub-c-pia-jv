@@ -31,7 +31,7 @@ const Index = () => {
             Dra. Isabella Tovar
           </h1>
 
-          <p className="mt-2 text-sm font-medium tracking-wide text-accent-foreground/70 sm:text-base">
+          <p className="mt-2 text-sm font-medium tracking-wide text-accent sm:text-base">
             MEDICA | CRM: 27286
           </p>
 
