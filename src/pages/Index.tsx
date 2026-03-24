@@ -50,7 +50,6 @@ const Index = () => {
               Agendar Consulta
             </Button>
           </a>
-          </p>
         </header>
 
         {/* Service Banners */}
