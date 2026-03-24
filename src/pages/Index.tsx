@@ -35,8 +35,7 @@ const Index = () => {
           </p>
 
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Para proporcionar um cuidado feminino completo e integrativo, atuo em diferentes áreas
-            essenciais para a sua melhor versão. Escolha abaixo a área do seu interesse:
+            Para proporcionar um cuidado feminino integral, Proponho diferentes tratamentos para a necessidade de cada mulher. Conheça os tratamentos disponíveis ou agende sua consulta.
           </p>
         </header>
 
