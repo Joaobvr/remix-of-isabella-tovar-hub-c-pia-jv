@@ -38,6 +38,19 @@ const Index = () => {
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             Para proporcionar um cuidado feminino integral, Proponho diferentes tratamentos para a necessidade de cada mulher. Conheça os tratamentos disponíveis ou agende sua consulta.
           </p>
+
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5"
+          >
+            <Button className="rounded-full px-8 py-3 text-sm font-semibold tracking-widest uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg">
+              <CalendarCheck className="h-4 w-4 mr-1" />
+              Agendar Consulta
+            </Button>
+          </a>
+          </p>
         </header>
 
         {/* Service Banners */}
