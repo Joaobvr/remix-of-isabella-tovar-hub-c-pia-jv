@@ -3,7 +3,7 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 import ServiceBanner from "@/components/ServiceBanner";
 
 const services = [
-  { icon: Activity, label: "Emagrecimento com Saúde e Beleza" },
+  { icon: Activity, label: "Emagrecimento com Saúde, Beleza e Disposição" },
   { icon: Sparkles, label: "FF Sculpt (Remodelação Corporal)" },
   { icon: Heart, label: "Regeneração e Estética Íntima" },
   { icon: Syringe, label: "Terapias com Suplementos e Injetáveis" },
