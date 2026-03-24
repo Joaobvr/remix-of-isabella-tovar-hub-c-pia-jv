@@ -7,7 +7,7 @@ const services = [
   { icon: Activity, label: "Emagrecimento com Saúde, Beleza e Disposição" },
   { icon: Sparkles, label: "FF Sculpt | Harmonização Corporal" },
   { icon: Heart, label: "Regeneração e Estética Íntima" },
-  { icon: Syringe, label: "Terapias com Suplementos e Injetáveis" },
+  { icon: Syringe, label: "Terapias Injetáveis" },
   { icon: Pill, label: "Terapias e Implantes Hormonais" },
   { icon: Stethoscope, label: "Acompanhamento Ginecológico" },
   { icon: Droplets, label: "Tratamento de Lipedema" },
