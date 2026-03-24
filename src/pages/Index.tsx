@@ -32,7 +32,7 @@ const Index = () => {
           </h1>
 
           <p className="mt-2 text-sm font-medium tracking-wide text-muted-foreground sm:text-base">
-            MEDICA | CRM: 27286
+            MÉDICA | CRM: 27286
           </p>
 
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
