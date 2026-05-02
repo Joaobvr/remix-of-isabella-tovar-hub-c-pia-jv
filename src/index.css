@@ -6,48 +6,49 @@
 
 @layer base {
   :root {
-    --background: 18 75% 82%;
-    --foreground: 0 0% 8%;
+    /* Quiet Luxury feminino — off-white quente, nude rosé, carvão profundo, dourado champagne */
+    --background: 30 25% 96%;
+    --foreground: 20 14% 16%;
 
-    --card: 28 50% 93%;
-    --card-foreground: 0 0% 8%;
+    --card: 28 22% 94%;
+    --card-foreground: 20 14% 16%;
 
-    --popover: 30 40% 96%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 30 25% 96%;
+    --popover-foreground: 20 14% 16%;
 
-    --primary: 75 28% 30%;
-    --primary-foreground: 30 40% 96%;
+    --primary: 20 14% 18%;
+    --primary-foreground: 30 25% 96%;
 
-    --secondary: 28 45% 90%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 25 20% 90%;
+    --secondary-foreground: 20 14% 16%;
 
-    --muted: 28 30% 92%;
-    --muted-foreground: 0 0% 35%;
+    --muted: 28 18% 92%;
+    --muted-foreground: 20 8% 42%;
 
-    --accent: 38 60% 55%;
-    --accent-foreground: 0 0% 8%;
+    --accent: 32 35% 62%;
+    --accent-foreground: 20 14% 16%;
 
-    --gold: 38 65% 55%;
-    --gold-light: 42 75% 75%;
-    --gold-dark: 34 55% 40%;
+    --gold: 36 38% 62%;
+    --gold-light: 38 50% 80%;
+    --gold-dark: 32 30% 45%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 30 25% 96%;
 
-    --border: 28 30% 85%;
-    --input: 28 30% 88%;
-    --ring: 38 60% 55%;
+    --border: 28 15% 86%;
+    --input: 28 15% 90%;
+    --ring: 36 38% 62%;
 
     --radius: 1rem;
 
-    --sidebar-background: 30 40% 96%;
-    --sidebar-foreground: 0 0% 8%;
-    --sidebar-primary: 18 75% 75%;
-    --sidebar-primary-foreground: 0 0% 8%;
-    --sidebar-accent: 28 45% 90%;
-    --sidebar-accent-foreground: 0 0% 8%;
-    --sidebar-border: 28 30% 85%;
-    --sidebar-ring: 38 60% 55%;
+    --sidebar-background: 30 25% 96%;
+    --sidebar-foreground: 20 14% 16%;
+    --sidebar-primary: 20 14% 18%;
+    --sidebar-primary-foreground: 30 25% 96%;
+    --sidebar-accent: 25 20% 90%;
+    --sidebar-accent-foreground: 20 14% 16%;
+    --sidebar-border: 28 15% 86%;
+    --sidebar-ring: 36 38% 62%;
   }
 
   .dark {
