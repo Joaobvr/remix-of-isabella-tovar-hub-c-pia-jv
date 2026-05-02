@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --background: 30 40% 96%;
+    --background: 18 75% 82%;
     --foreground: 0 0% 8%;
 
     --card: 28 50% 93%;
@@ -87,8 +87,9 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply text-foreground font-sans;
     font-family: 'Montserrat', sans-serif;
+    background-color: hsl(18 75% 82% / 0.7);
   }
 }
 
