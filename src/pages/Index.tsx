@@ -23,7 +23,8 @@ const Index = () => {
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="h-28 w-28 rounded-full object-cover sm:h-32 sm:w-32"
+              className="h-28 w-28 rounded-full object-cover object-top sm:h-32 sm:w-32"
+              style={{ objectPosition: "50% 15%" }}
             />
           </div>
 
