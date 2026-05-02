@@ -18,12 +18,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-lg px-5 py-10 sm:py-16 animate-page-fade-in">
         {/* Header */}
-        <header className="flex flex-col items-center text-center mb-10">
+        <header className="items-center text-center mb-10 flex flex-col">
           <div className="profile-ring mb-5 h-28 w-28 sm:h-32 sm:w-32 overflow-hidden rounded-full">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover mt-0"
               style={{ transform: "scale(1.3) translateY(15%)", transformOrigin: "50% 50%" }}
             />
           </div>
