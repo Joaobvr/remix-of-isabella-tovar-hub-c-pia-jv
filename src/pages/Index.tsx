@@ -90,11 +90,11 @@ const Index = () => {
 
           <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
             <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
-            <span>Atendimento Exclusivo em [Cidade]</span>
+            <span>Atendimento em Goiânia GO e Online</span>
           </div>
 
           <p className="text-[11px] text-muted-foreground/60">
-            © Dra. Isabella Tovar — CRM [Número]
+            Dra. Isabella Tovar | CRM 27286 GO
           </p>
         </footer>
       </div>
