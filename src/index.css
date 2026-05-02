@@ -99,22 +99,16 @@
   }
 
   .service-banner {
-    @apply w-full flex items-center gap-4 px-5 py-5 rounded-2xl border transition-all duration-300 ease-out cursor-pointer
-           hover:shadow-lg hover:-translate-y-0.5;
-    background: linear-gradient(135deg, hsl(75 25% 32%), hsl(75 30% 24%));
-    border-color: hsl(75 30% 22%);
-    color: hsl(30 40% 94%);
-    box-shadow: 0 2px 12px -4px hsl(0 0% 0% / 0.15);
+    @apply w-full flex items-center gap-4 px-5 py-5 rounded-2xl border border-border
+           transition-all duration-300 ease-out cursor-pointer
+           hover:-translate-y-0.5;
+    background: linear-gradient(135deg, hsl(28 22% 95%), hsl(25 20% 92%));
+    box-shadow: 0 1px 2px hsl(20 14% 16% / 0.04), 0 8px 24px -16px hsl(20 14% 16% / 0.08);
   }
 
-  .service-banner span { color: hsl(30 40% 94%); }
-  .service-banner .text-primary { color: hsl(38 70% 70%); }
-  .service-banner .bg-primary\/10 { background-color: hsl(38 65% 55% / 0.18); }
-  .service-banner .text-muted-foreground { color: hsl(30 30% 80%); }
-
   .service-banner:hover {
-    box-shadow: 0 8px 24px -8px hsl(75 30% 15% / 0.4);
-    border-color: hsl(38 65% 55%);
+    box-shadow: 0 2px 4px hsl(20 14% 16% / 0.06), 0 12px 32px -12px hsl(36 38% 62% / 0.25);
+    border-color: hsl(var(--gold));
   }
 
   .profile-ring {
