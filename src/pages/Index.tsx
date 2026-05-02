@@ -24,7 +24,7 @@ const Index = () => {
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
               className="h-full w-full object-cover mt-0"
-              style={{ transform: "scale(1.3) translateY(15%)", transformOrigin: "50% 50%" }}
+              style={{ transform: "scale(1.3)", transformOrigin: "50% 20%" }}
             />
           </div>
 
