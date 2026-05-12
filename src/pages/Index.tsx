@@ -28,13 +28,12 @@ const Index = () => {
             />
           </div>
 
-          <h1 className="font-serif-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+          <h1 className="font-serif-display text-3xl font-light tracking-wide text-foreground sm:text-4xl">
             Dra. Isabella Tovar
           </h1>
 
-          <p className="mt-2 text-sm font-medium tracking-wide text-muted-foreground sm:text-base">
-            MÉDICA | CRM: 27286
-          </p>
+          <p className="mt-3 text-[11px] font-light tracking-[0.3em] uppercase text-muted-foreground">
+            Médica · CRM 27286</p>
 
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
             Tratamentos para melhorar sua composição corporal, equilíbrio hormonal e metabólico. Porque sua saúde, autoconfiança e o prazer de viver tem muito valor.
