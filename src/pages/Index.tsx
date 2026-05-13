@@ -16,7 +16,7 @@ const services = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <div className="mx-auto max-w-lg px-5 py-10 sm:py-16 animate-page-fade-in">
+      <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
         <header className="items-center text-center mb-10 flex flex-col">
           <div className="profile-ring mb-5 h-28 w-28 sm:h-32 sm:w-32 overflow-hidden rounded-full">
