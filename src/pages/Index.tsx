@@ -45,7 +45,7 @@ const Index = () => {
           </p>
 
           <a
-            href="https://wa.me/"
+            href="https://wa.me/556296093076"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-5"
@@ -76,7 +76,7 @@ const Index = () => {
         {/* CTA after services */}
         <div className="flex justify-center mb-14">
           <a
-            href="https://wa.me/"
+            href="https://wa.me/556296093076"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -100,7 +100,7 @@ const Index = () => {
               <Instagram className="h-5 w-5" strokeWidth={1.6} />
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/556296093076"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
