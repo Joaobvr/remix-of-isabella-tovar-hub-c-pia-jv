@@ -19,7 +19,7 @@ const Index = () => {
       <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
         <header className="items-center text-center mb-10 flex flex-col">
-          <div className="profile-ring mb-5 h-28 w-28 sm:h-32 sm:w-32 overflow-hidden rounded-full">
+          <div className="profile-ring mb-5 h-28 w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40 overflow-hidden rounded-full">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
@@ -28,18 +28,18 @@ const Index = () => {
             />
           </div>
 
-          <h1 className="font-serif-display text-3xl font-light tracking-wide text-foreground sm:text-4xl">
+          <h1 className="font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground">
             Dra. Isabella Tovar
           </h1>
 
-          <p className="mt-3 text-[11px] font-light tracking-[0.3em] uppercase text-muted-foreground">
+          <p className="mt-3 text-[11px] sm:text-xs font-light tracking-[0.3em] uppercase text-muted-foreground">
             Médica · CRM 27286</p>
 
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base leading-relaxed text-muted-foreground">
             Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
           </p>
 
-          <p className="mt-3 max-w-sm text-[11px] font-light tracking-[0.2em] leading-relaxed text-primary/80 italic">
+          <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-[11px] sm:text-xs font-light tracking-[0.2em] leading-relaxed text-primary/80 italic">
             Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
           </p>
 
@@ -57,7 +57,7 @@ const Index = () => {
         </header>
 
         {/* Service Banners */}
-        <nav className="flex flex-col gap-3 mb-12">
+        <nav className="flex flex-col gap-3 sm:gap-4 md:gap-5 mb-12 sm:mb-16">
           {services.map((service, i) => (
             <ServiceBanner
               key={service.label}
