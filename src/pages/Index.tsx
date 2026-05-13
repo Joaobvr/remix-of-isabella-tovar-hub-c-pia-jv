@@ -36,7 +36,11 @@ const Index = () => {
             Médica · CRM 27286</p>
 
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            Tratamentos para melhorar sua composição corporal, equilíbrio hormonal e metabólico. Porque sua saúde, autoconfiança e o prazer de viver tem muito valor.
+            Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
+          </p>
+
+          <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground italic">
+            Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
           </p>
 
           <a
