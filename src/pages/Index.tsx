@@ -33,14 +33,14 @@ const Index = () => {
             Dra. Isabella Tovar
           </h1>
 
-          <p className="mt-3 text-[11px] sm:text-xs font-light tracking-[0.3em] uppercase text-muted-foreground">
+          <p className="mt-3 text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
             Médica · CRM 27286</p>
 
-          <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base md:text-lg leading-relaxed text-muted-foreground">
             Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
           </p>
 
-          <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-[11px] sm:text-xs font-light tracking-[0.2em] leading-relaxed text-primary/80 italic">
+          <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-xs sm:text-sm font-light tracking-[0.2em] leading-relaxed text-primary/80 italic">
             Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
           </p>
 
@@ -50,7 +50,7 @@ const Index = () => {
             rel="noopener noreferrer"
             className="mt-5"
           >
-            <Button className="rounded-full px-10 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+            <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
               <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
               Agendar Consulta
             </Button>
@@ -80,7 +80,7 @@ const Index = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="rounded-full px-10 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+            <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
               <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
               Agendar Consulta
             </Button>
@@ -115,7 +115,7 @@ const Index = () => {
             <span>Atendimento em Goiânia GO e Online</span>
           </div>
 
-          <p className="text-[11px] text-muted-foreground/60">
+          <p className="text-xs text-muted-foreground/60">
             Dra. Isabella Tovar | CRM 27286 GO
           </p>
         </footer>
