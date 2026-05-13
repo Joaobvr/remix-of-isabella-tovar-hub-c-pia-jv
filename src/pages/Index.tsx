@@ -45,7 +45,7 @@ const Index = () => {
           </p>
 
           <a
-            href="https://wa.me/"
+            href="https://wa.me/556296093076"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-5"
