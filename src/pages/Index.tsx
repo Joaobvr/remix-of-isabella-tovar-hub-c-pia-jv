@@ -58,16 +58,19 @@ const Index = () => {
         </header>
 
         {/* Service Banners */}
-        <nav className="flex flex-col gap-3 sm:gap-4 md:gap-5 mb-12 sm:mb-16">
-          {services.map((service, i) => (
-            <ServiceBanner
-              key={service.label}
-              icon={service.icon}
-              label={service.label}
-              delay={300 + i * 100}
-            />
-          ))}
-        </nav>
+        <TooltipProvider delayDuration={200}>
+          <nav className="flex flex-col gap-3 sm:gap-4 md:gap-5 mb-12 sm:mb-16">
+            {services.map((service, i) => (
+              <ServiceBanner
+                key={service.label}
+                icon={service.icon}
+                label={service.label}
+                description={service.description}
+                delay={300 + i * 100}
+              />
+            ))}
+          </nav>
+        </TooltipProvider>
 
         {/* CTA after services */}
         <div className="flex justify-center mb-14">
