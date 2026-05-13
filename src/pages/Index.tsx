@@ -66,6 +66,7 @@ const Index = () => {
                 icon={service.icon}
                 label={service.label}
                 description={service.description}
+                href={service.href}
                 delay={300 + i * 100}
               />
             ))}
