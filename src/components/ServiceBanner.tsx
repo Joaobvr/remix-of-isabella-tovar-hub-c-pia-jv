@@ -15,7 +15,7 @@ interface ServiceBannerProps {
 }
 
 const ServiceBanner = ({ icon: Icon, label, description, href = "#", delay }: ServiceBannerProps) => {
-  return (
+  const content = (
     <a
       href={href}
       className="service-banner group animate-stagger-in"
@@ -32,6 +32,17 @@ const ServiceBanner = ({ icon: Icon, label, description, href = "#", delay }: Se
         strokeWidth={1.8}
       />
     </a>
+  );
+
+  if (!description) return content;
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{content}</TooltipTrigger>
+      <TooltipContent side="bottom" className="max-w-xs text-center leading-relaxed">
+        {description}
+      </TooltipContent>
+    </Tooltip>
   );
 };
 
