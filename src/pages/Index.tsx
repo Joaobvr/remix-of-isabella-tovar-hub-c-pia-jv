@@ -100,7 +100,7 @@ const Index = () => {
               <Instagram className="h-5 w-5" strokeWidth={1.6} />
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/556296093076"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
