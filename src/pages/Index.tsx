@@ -36,11 +36,11 @@ const Index = () => {
           <p className="mt-3 text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
             Médica · CRM 27286</p>
 
-          <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground/90">
+          <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
             Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
           </p>
 
-          <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground/80 italic">
+          <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground italic">
             Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
           </p>
 
