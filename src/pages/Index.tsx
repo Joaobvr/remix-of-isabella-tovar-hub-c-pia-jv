@@ -68,6 +68,20 @@ const Index = () => {
           ))}
         </nav>
 
+        {/* CTA after services */}
+        <div className="flex justify-center mb-14">
+          <a
+            href="https://wa.me/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="rounded-full px-10 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+              <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
+              Agendar Consulta
+            </Button>
+          </a>
+        </div>
+
         {/* Footer */}
         <footer className="flex flex-col items-center gap-4 text-center">
           <div className="flex items-center gap-5">
