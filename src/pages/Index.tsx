@@ -2,15 +2,16 @@ import { Activity, Sparkles, Heart, Syringe, Pill, Stethoscope, Instagram, Messa
 import profilePhoto from "@/assets/profile-photo.jpg";
 import ServiceBanner from "@/components/ServiceBanner";
 import { Button } from "@/components/ui/button";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const services = [
-  { icon: Activity, label: "Emagrecimento e Recomposição Corporal" },
-  { icon: Sparkles, label: "FF Sculpt | Harmonização Corporal" },
-  { icon: Heart, label: "Regeneração e Estética Íntima" },
-  { icon: Syringe, label: "Terapias Injetáveis" },
-  { icon: Pill, label: "Terapias e Implantes Hormonais" },
-  { icon: Droplets, label: "Tratamento de Lipedema" },
-  { icon: Stethoscope, label: "Acompanhamento Ginecológico" },
+  { icon: Activity, label: "Emagrecimento e Recomposição Corporal", description: "Tratamento para emagrecer preservando sua massa muscular, sua saúde metabólica e sua beleza." },
+  { icon: Sparkles, label: "FF Sculpt | Harmonização Corporal", description: "Técnica patenteada que promove redução progressiva de gordura localizada e da flacidez." },
+  { icon: Heart, label: "Regeneração e Estética Íntima", description: "Procedimentos para melhorar a estética e a funcionalidade da região íntima, tanto da parte externa quanto interna da vagina." },
+  { icon: Syringe, label: "Terapias Injetáveis", description: "Protocolos ajustáveis para otimizar seu metabolismo em diversos contextos, como proteção capilar, disposição e controle de inflamação crônica." },
+  { icon: Pill, label: "Terapias e Implantes Hormonais", description: "Implantes Hormonais e não Hormonais e outras formas de Reposição Hormonal para diferente condições clínicas como menopausa e perda de libido." },
+  { icon: Droplets, label: "Tratamento de Lipedema", description: "Tratamento de lipedema multimodal para redução de sintomas e estética da região afetada." },
+  { icon: Stethoscope, label: "Acompanhamento Ginecológico", description: "Prevenção e acompanhamento ginecológico. Endometriose, SOP, DIU, Implanon, etc." },
 ];
 
 const Index = () => {
