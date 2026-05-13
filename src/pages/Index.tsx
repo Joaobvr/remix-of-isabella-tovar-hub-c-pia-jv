@@ -49,7 +49,7 @@ const Index = () => {
             rel="noopener noreferrer"
             className="mt-5"
           >
-            <Button className="rounded-full px-10 py-3 text-[11px] font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+            <Button className="rounded-full px-10 py-2.5 text-[11px] font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
               <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
               Agendar Consulta
             </Button>

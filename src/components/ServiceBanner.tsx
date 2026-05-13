@@ -14,7 +14,7 @@ const ServiceBanner = ({ icon: Icon, label, href = "#", delay }: ServiceBannerPr
       className="service-banner group animate-stagger-in"
       style={{ animationDelay: `${delay}ms` }}
     >
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10">
+      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10">
         <Icon className="h-5 w-5 text-primary" strokeWidth={1.8} />
       </div>
       <span className="flex-1 text-sm font-medium tracking-wide text-foreground sm:text-base">
