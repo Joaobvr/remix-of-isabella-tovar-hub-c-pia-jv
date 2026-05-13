@@ -9,8 +9,8 @@ const services = [
   { icon: Heart, label: "Regeneração e Estética Íntima" },
   { icon: Syringe, label: "Terapias Injetáveis" },
   { icon: Pill, label: "Terapias e Implantes Hormonais" },
-  { icon: Stethoscope, label: "Acompanhamento Ginecológico" },
   { icon: Droplets, label: "Tratamento de Lipedema" },
+  { icon: Stethoscope, label: "Acompanhamento Ginecológico" },
 ];
 
 const Index = () => {
