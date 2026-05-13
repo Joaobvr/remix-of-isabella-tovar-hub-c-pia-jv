@@ -39,7 +39,7 @@ const Index = () => {
             Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
           </p>
 
-          <p className="mt-2 max-w-sm text-sm leading-relaxed text-muted-foreground italic">
+          <p className="mt-3 max-w-sm text-[11px] font-light tracking-[0.2em] leading-relaxed text-primary/80 italic">
             Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
           </p>
 
