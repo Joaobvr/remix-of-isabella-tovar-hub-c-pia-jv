@@ -1,14 +1,21 @@
 import { ArrowRight, type LucideIcon } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface ServiceBannerProps {
   icon: LucideIcon;
   label: string;
+  description?: string;
   href?: string;
   delay: number;
 }
 
-const ServiceBanner = ({ icon: Icon, label, href = "#", delay }: ServiceBannerProps) => {
-  return (
+const ServiceBanner = ({ icon: Icon, label, description, href = "#", delay }: ServiceBannerProps) => {
+  const content = (
     <a
       href={href}
       className="service-banner group animate-stagger-in"
@@ -25,6 +32,17 @@ const ServiceBanner = ({ icon: Icon, label, href = "#", delay }: ServiceBannerPr
         strokeWidth={1.8}
       />
     </a>
+  );
+
+  if (!description) return content;
+
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>{content}</TooltipTrigger>
+      <TooltipContent side="bottom" className="max-w-xs text-center leading-relaxed">
+        {description}
+      </TooltipContent>
+    </Tooltip>
   );
 };
 
