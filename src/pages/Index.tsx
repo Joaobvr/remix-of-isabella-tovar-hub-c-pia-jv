@@ -4,7 +4,7 @@ import ServiceBanner from "@/components/ServiceBanner";
 import { Button } from "@/components/ui/button";
 
 const services = [
-  { icon: Activity, label: "Emagrecimento com Saúde, Beleza e Disposição" },
+  { icon: Activity, label: "Emagrecimento e Recomposição Corporal" },
   { icon: Sparkles, label: "FF Sculpt | Harmonização Corporal" },
   { icon: Heart, label: "Regeneração e Estética Íntima" },
   { icon: Syringe, label: "Terapias Injetáveis" },
