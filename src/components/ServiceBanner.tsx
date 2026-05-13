@@ -1,13 +1,20 @@
 import { ArrowRight, type LucideIcon } from "lucide-react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 interface ServiceBannerProps {
   icon: LucideIcon;
   label: string;
+  description?: string;
   href?: string;
   delay: number;
 }
 
-const ServiceBanner = ({ icon: Icon, label, href = "#", delay }: ServiceBannerProps) => {
+const ServiceBanner = ({ icon: Icon, label, description, href = "#", delay }: ServiceBannerProps) => {
   return (
     <a
       href={href}
