@@ -48,6 +48,7 @@ const Index = () => {
             href="https://wa.me/556296093076"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => (window as any).fbq?.('track', 'Contact')}
             className="mt-5"
           >
             <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
@@ -79,6 +80,7 @@ const Index = () => {
             href="https://wa.me/556296093076"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => (window as any).fbq?.('track', 'Contact')}
           >
             <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
               <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
@@ -104,6 +106,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
+              onClick={() => (window as any).fbq?.('track', 'Contact')}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-card border border-border text-muted-foreground transition-colors hover:text-primary hover:border-accent"
             >
               <MessageCircle className="h-5 w-5" strokeWidth={1.6} />
