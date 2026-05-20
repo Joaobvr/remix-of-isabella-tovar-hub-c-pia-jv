@@ -19,30 +19,29 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
-        <header className="relative mb-10 overflow-hidden rounded-3xl">
-          {/* Background photo with gradient fade to background */}
-          <div className="absolute inset-x-0 top-0 h-[70%] -z-10">
+        <header className="mb-10">
+          {/* Photo with gradient fade and overlaid name */}
+          <div className="relative overflow-hidden rounded-3xl">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="h-full w-full object-cover"
+              className="w-full h-[70vw] sm:h-[440px] md:h-[500px] lg:h-[560px] object-cover"
               style={{ objectPosition: "50% 20%" }}
             />
             <div
-              className="absolute inset-0"
+              className="absolute inset-0 pointer-events-none"
               style={{
                 background:
                   "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.7) 15%, hsl(var(--background) / 0.2) 28%, transparent 33%)",
               }}
             />
-          </div>
-
-          <div className="flex flex-col items-center text-center px-5 pt-[70vw] sm:pt-[440px] md:pt-[500px] lg:pt-[560px] pb-6">
-            <h1 className="font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground">
+            <h1 className="absolute bottom-3 sm:bottom-4 left-0 right-0 text-center font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground px-5">
               Dra. Isabella Tovar
             </h1>
+          </div>
 
-            <p className="mt-3 text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
+          <div className="flex flex-col items-center text-center px-5 pt-6">
+            <p className="text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
               Médica · CRM 27286
             </p>
 
