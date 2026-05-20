@@ -19,9 +19,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
-        <header className="relative mb-10 overflow-hidden rounded-3xl">
+        <header className="relative mb-10 overflow-hidden rounded-3xl flex flex-col min-h-[calc(100vh-5rem)] sm:min-h-[calc(100vh-8rem)] md:min-h-[calc(100vh-10rem)]">
           {/* Background photo with gradient fade to background */}
-          <div className="absolute inset-x-0 top-0 h-[70%] -z-10">
+          <div className="absolute inset-x-0 top-0 h-[55vh] sm:h-[60vh] -z-10">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
@@ -37,7 +37,7 @@ const Index = () => {
             />
           </div>
 
-          <div className="flex flex-col items-center text-center px-5 pt-[70vw] sm:pt-[440px] md:pt-[500px] lg:pt-[560px] pb-6">
+          <div className="flex flex-col items-center text-center px-5 pb-4 mt-auto">
             <h1 className="font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground">
               Dra. Isabella Tovar
             </h1>
