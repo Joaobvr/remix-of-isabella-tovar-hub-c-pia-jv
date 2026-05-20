@@ -25,8 +25,7 @@ const Index = () => {
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="w-full h-[70vw] sm:h-[440px] md:h-[500px] lg:h-[560px] object-cover"
-              style={{ objectPosition: "50% 20%" }}
+              className="w-full h-auto"
             />
             <div
               className="absolute inset-0 pointer-events-none"
