@@ -19,43 +19,54 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
-        <header className="items-center text-center mb-10 flex flex-col">
-          <div className="profile-ring mb-5 h-28 w-28 sm:h-32 sm:w-32 md:h-36 md:w-36 lg:h-40 lg:w-40 overflow-hidden rounded-full">
+        <header className="relative mb-10 overflow-hidden rounded-3xl">
+          {/* Background photo with gradient fade to background */}
+          <div className="absolute inset-x-0 top-0 h-[70%] -z-10">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="h-full w-full object-cover mt-0"
-              style={{ objectPosition: "50% 25%", transform: "scale(1.05)" }}
+              className="h-full w-full object-cover"
+              style={{ objectPosition: "50% 20%" }}
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.85) 25%, hsl(var(--background) / 0.35) 55%, hsl(var(--background) / 0.05) 85%, transparent 100%)",
+              }}
             />
           </div>
 
-          <h1 className="font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground">
-            Dra. Isabella Tovar
-          </h1>
+          <div className="flex flex-col items-center text-center px-5 pt-[70vw] sm:pt-[440px] md:pt-[500px] lg:pt-[560px] pb-6">
+            <h1 className="font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground">
+              Dra. Isabella Tovar
+            </h1>
 
-          <p className="mt-3 text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
-            Médica · CRM 27286</p>
+            <p className="mt-3 text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
+              Médica · CRM 27286
+            </p>
 
-          <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
-            Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
-          </p>
+            <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
+              Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
+            </p>
 
-          <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground italic">
-            Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
-          </p>
+            <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground italic">
+              Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
+            </p>
 
-          <a
-            href="https://wa.me/556296093076"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => (window as any).fbq?.('track', 'Contact')}
-            className="mt-5"
-          >
-            <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
-              <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
-              Agendar Consulta
-            </Button>
-          </a>
+            <a
+              href="https://wa.me/556296093076"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => (window as any).fbq?.('track', 'Contact')}
+              className="mt-5"
+            >
+              <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+                <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
+                Agendar Consulta
+              </Button>
+            </a>
+          </div>
         </header>
 
         {/* Service Banners */}
