@@ -21,7 +21,7 @@ const Index = () => {
         {/* Header */}
         <header className="mb-10">
           {/* Photo with gradient fade and overlaid name */}
-          <div className="relative overflow-hidden -mx-5 sm:-mx-8 md:-mx-12 -mt-10 sm:-mt-16 md:-mt-20">
+          <div className="relative overflow-hidden -mt-10 sm:-mt-16 md:-mt-20 left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw]">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
