@@ -19,9 +19,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
-        <header className="mb-10">
+        <header className="mb-10 min-h-screen flex flex-col -mt-10 sm:-mt-16 md:-mt-20 pb-6">
           {/* Photo with gradient fade and overlaid name */}
-          <div className="relative overflow-hidden -mt-10 sm:-mt-16 md:-mt-20 left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw]">
+          <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw]">
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
@@ -39,7 +39,7 @@ const Index = () => {
             </h1>
           </div>
 
-          <div className="flex flex-col items-center text-center px-5 pt-6">
+          <div className="flex-1 flex flex-col items-center text-center px-5 pt-6">
             <p className="text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
               Médica · CRM 27286
             </p>
@@ -57,7 +57,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => (window as any).fbq?.('track', 'Contact')}
-              className="mt-5"
+              className="mt-auto pt-6"
             >
               <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
                 <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
