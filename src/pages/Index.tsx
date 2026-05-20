@@ -34,21 +34,22 @@ const Index = () => {
                   "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.7) 15%, hsl(var(--background) / 0.2) 28%, transparent 33%)",
               }}
             />
-            <h1 className="absolute bottom-3 sm:bottom-4 left-0 right-0 text-center font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground px-5">
-              Dra. Isabella Tovar
-            </h1>
           </div>
 
-          <div className="flex-1 flex flex-col items-center text-center px-5 pt-6">
+          <div className="flex-1 flex flex-col items-center text-center px-5 pt-6 pb-2 gap-4">
+            <h1 className="font-serif-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground">
+              Dra. Isabella Tovar
+            </h1>
+
             <p className="text-xs sm:text-sm font-light tracking-[0.3em] uppercase text-muted-foreground">
               Médica · CRM 27286
             </p>
 
-            <p className="mt-4 max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
+            <p className="max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
               Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
             </p>
 
-            <p className="mt-3 max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground italic">
+            <p className="max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground italic">
               Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
             </p>
 
@@ -57,7 +58,7 @@ const Index = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => (window as any).fbq?.('track', 'Contact')}
-              className="mt-auto pt-6"
+              className="mt-auto pt-4"
             >
               <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
                 <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
