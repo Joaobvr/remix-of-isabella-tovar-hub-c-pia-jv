@@ -31,7 +31,7 @@ const Index = () => {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.7) 15%, hsl(var(--background) / 0.2) 28%, transparent 33%)",
+                  "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.7) 10%, hsl(var(--background) / 0.2) 20%, transparent 25%)",
               }}
             />
           </div>
