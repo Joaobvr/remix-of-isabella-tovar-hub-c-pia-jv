@@ -32,7 +32,7 @@ const Index = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.85) 25%, hsl(var(--background) / 0.35) 55%, hsl(var(--background) / 0.05) 85%, transparent 100%)",
+                  "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.7) 15%, hsl(var(--background) / 0.2) 28%, transparent 33%)",
               }}
             />
           </div>
