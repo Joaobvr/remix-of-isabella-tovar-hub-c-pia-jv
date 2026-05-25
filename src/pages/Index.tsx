@@ -128,6 +128,16 @@ const Index = () => {
             <span>Atendimento em Goiânia GO e Online</span>
           </div>
 
+          <a
+            href="https://maps.app.goo.gl/TSMGRL7jCHvG4TXN9?g_st=ac"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-primary"
+          >
+            <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
+            <span>Clínica Vizz | Setor Marista</span>
+          </a>
+
           <p className="text-xs text-muted-foreground/60">
             Dra. Isabella Tovar | CRM 27286 GO
           </p>
