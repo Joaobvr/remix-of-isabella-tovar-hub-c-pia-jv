@@ -60,7 +60,7 @@ const Index = () => {
               onClick={() => (window as any).fbq?.('track', 'Contact')}
               className="mt-auto pt-4"
             >
-              <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+              <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-gradient-to-b from-primary to-primary/80 text-primary-foreground hover:from-primary/95 hover:to-primary/75 border-t border-primary-foreground/20 shadow-[0_6px_0_-2px_hsl(var(--primary)/0.5),0_8px_20px_-4px_hsl(var(--primary)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.3),inset_0_-2px_4px_hsl(var(--background)/0.2)] active:translate-y-1 active:shadow-[0_2px_0_-1px_hsl(var(--primary)/0.5),0_3px_8px_-2px_hsl(var(--primary)/0.5),inset_0_1px_0_hsl(var(--primary-foreground)/0.3)] transition-all duration-150">
                 <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
                 Agendar Consulta
               </Button>
@@ -92,7 +92,7 @@ const Index = () => {
             rel="noopener noreferrer"
             onClick={() => (window as any).fbq?.('track', 'Contact')}
           >
-            <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-primary text-primary-foreground hover:bg-primary/90 shadow-md">
+            <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-gradient-to-b from-primary to-primary/80 text-primary-foreground hover:from-primary/95 hover:to-primary/75 border-t border-primary-foreground/20 shadow-[0_6px_0_-2px_hsl(var(--primary)/0.5),0_8px_20px_-4px_hsl(var(--primary)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.3),inset_0_-2px_4px_hsl(var(--background)/0.2)] active:translate-y-1 active:shadow-[0_2px_0_-1px_hsl(var(--primary)/0.5),0_3px_8px_-2px_hsl(var(--primary)/0.5),inset_0_1px_0_hsl(var(--primary-foreground)/0.3)] transition-all duration-150">
               <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
               Agendar Consulta
             </Button>
