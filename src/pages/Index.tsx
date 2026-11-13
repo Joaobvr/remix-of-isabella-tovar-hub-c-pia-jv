@@ -109,7 +109,7 @@ const Index = () => {
         <footer className="flex flex-col items-center gap-4 text-center">
           <div className="flex items-center gap-5">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/dra.isabellatovar/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
