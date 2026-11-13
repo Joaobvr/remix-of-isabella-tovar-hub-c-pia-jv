@@ -31,7 +31,7 @@ const Index = () => {
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="w-full h-auto md:h-[62vh] md:object-cover md:object-[center_30%]"
+              className="w-full h-auto"
             />
             <div
               className="absolute inset-0 pointer-events-none"
