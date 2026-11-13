@@ -11,13 +11,21 @@ interface ServiceBannerProps {
   label: string;
   description?: string;
   href?: string;
+  isWhatsapp?: boolean;
   delay: number;
 }
 
-const ServiceBanner = ({ icon: Icon, label, description, href = "#", delay }: ServiceBannerProps) => {
+const ServiceBanner = ({ icon: Icon, label, description, href = "#", isWhatsapp = false, delay }: ServiceBannerProps) => {
   const content = (
     <a
       href={href}
+      {...(isWhatsapp
+        ? {
+            target: "_blank",
+            rel: "noopener noreferrer",
+            onClick: () => (window as any).fbq?.("track", "Contact"),
+          }
+        : {})}
       className="service-banner group animate-stagger-in"
       style={{ animationDelay: `${delay}ms` }}
     >

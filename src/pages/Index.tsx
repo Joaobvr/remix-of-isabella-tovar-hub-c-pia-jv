@@ -4,6 +4,12 @@ import ServiceBanner from "@/components/ServiceBanner";
 import { Button } from "@/components/ui/button";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
+const WHATSAPP_NUMBER = "556296093076";
+const whatsappLink = (message: string) =>
+  `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+const CONSULTA_LINK = whatsappLink("Olá! Vim pelo site e gostaria de agendar uma consulta com a Dra. Isabella.");
+const trackContact = () => (window as any).fbq?.("track", "Contact");
+
 const services = [
   { icon: Activity, label: "Emagrecimento e Recomposição Corporal", description: "Tratamento para emagrecer preservando sua massa muscular, sua saúde metabólica e sua beleza.", href: "https://emagrecimento.draisabellatovar.com.br/" },
   { icon: Sparkles, label: "FF Sculpt | Harmonização Corporal", description: "Técnica patenteada que promove redução progressiva de gordura localizada e da flacidez.", href: "https://ffsculpt.draisabellatovar.com.br/" },
@@ -25,7 +31,7 @@ const Index = () => {
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="w-full h-auto"
+              className="w-full h-auto md:h-[62vh] md:object-cover md:object-[center_30%]"
             />
             <div
               className="absolute inset-0 pointer-events-none"
@@ -45,26 +51,27 @@ const Index = () => {
               Médica · CRM 27286
             </p>
 
+            <p className="-mt-2 flex items-center gap-1.5 text-xs sm:text-sm text-muted-foreground">
+              <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
+              Goiânia GO · Atendimento online
+            </p>
+
             <p className="max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
               Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
             </p>
 
-            <p className="max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-[0.2em] leading-relaxed text-foreground italic">
-              Porque sua saúde, disposição, autoconfiança e prazer em viver tem muito valor.
+            <p className="max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-wide leading-relaxed text-foreground italic">
+              Porque sua saúde, disposição, autoconfiança e prazer em viver têm muito valor.
             </p>
 
-            <a
-              href="https://wa.me/556296093076"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => (window as any).fbq?.('track', 'Contact')}
-              className="mt-auto pt-4"
-            >
-              <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-gradient-to-b from-primary to-primary/80 text-primary-foreground hover:from-primary/95 hover:to-primary/75 border-t border-primary-foreground/20 shadow-[0_6px_0_-2px_hsl(var(--primary)/0.5),0_8px_20px_-4px_hsl(var(--primary)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.3),inset_0_-2px_4px_hsl(var(--background)/0.2)] active:translate-y-1 active:shadow-[0_2px_0_-1px_hsl(var(--primary)/0.5),0_3px_8px_-2px_hsl(var(--primary)/0.5),inset_0_1px_0_hsl(var(--primary-foreground)/0.3)] transition-all duration-150">
-                <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
-                Agendar Consulta
+            <div className="mt-auto pt-4">
+              <Button asChild className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-gradient-to-b from-primary to-primary/80 text-primary-foreground hover:from-primary/95 hover:to-primary/75 border-t border-primary-foreground/20 shadow-[0_6px_0_-2px_hsl(var(--primary)/0.5),0_8px_20px_-4px_hsl(var(--primary)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.3),inset_0_-2px_4px_hsl(var(--background)/0.2)] active:translate-y-1 active:shadow-[0_2px_0_-1px_hsl(var(--primary)/0.5),0_3px_8px_-2px_hsl(var(--primary)/0.5),inset_0_1px_0_hsl(var(--primary-foreground)/0.3)] transition-all duration-150">
+                <a href={CONSULTA_LINK} target="_blank" rel="noopener noreferrer" onClick={trackContact}>
+                  <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
+                  Agendar Consulta
+                </a>
               </Button>
-            </a>
+            </div>
           </div>
         </header>
 
@@ -77,7 +84,11 @@ const Index = () => {
                 icon={service.icon}
                 label={service.label}
                 description={service.description}
-                href={service.href}
+                href={
+                  service.href ??
+                  whatsappLink(`Olá! Vim pelo site e gostaria de saber mais sobre ${service.label}.`)
+                }
+                isWhatsapp={!service.href}
                 delay={300 + i * 100}
               />
             ))}
@@ -86,17 +97,12 @@ const Index = () => {
 
         {/* CTA after services */}
         <div className="flex justify-center mb-14">
-          <a
-            href="https://wa.me/556296093076"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => (window as any).fbq?.('track', 'Contact')}
-          >
-            <Button className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-gradient-to-b from-primary to-primary/80 text-primary-foreground hover:from-primary/95 hover:to-primary/75 border-t border-primary-foreground/20 shadow-[0_6px_0_-2px_hsl(var(--primary)/0.5),0_8px_20px_-4px_hsl(var(--primary)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.3),inset_0_-2px_4px_hsl(var(--background)/0.2)] active:translate-y-1 active:shadow-[0_2px_0_-1px_hsl(var(--primary)/0.5),0_3px_8px_-2px_hsl(var(--primary)/0.5),inset_0_1px_0_hsl(var(--primary-foreground)/0.3)] transition-all duration-150">
+          <Button asChild className="rounded-full px-10 py-2.5 text-xs font-light tracking-[0.3em] uppercase bg-gradient-to-b from-primary to-primary/80 text-primary-foreground hover:from-primary/95 hover:to-primary/75 border-t border-primary-foreground/20 shadow-[0_6px_0_-2px_hsl(var(--primary)/0.5),0_8px_20px_-4px_hsl(var(--primary)/0.6),inset_0_1px_0_hsl(var(--primary-foreground)/0.3),inset_0_-2px_4px_hsl(var(--background)/0.2)] active:translate-y-1 active:shadow-[0_2px_0_-1px_hsl(var(--primary)/0.5),0_3px_8px_-2px_hsl(var(--primary)/0.5),inset_0_1px_0_hsl(var(--primary-foreground)/0.3)] transition-all duration-150">
+            <a href={CONSULTA_LINK} target="_blank" rel="noopener noreferrer" onClick={trackContact}>
               <CalendarCheck className="h-4 w-4 mr-2" strokeWidth={1.4} />
               Agendar Consulta
-            </Button>
-          </a>
+            </a>
+          </Button>
         </div>
 
         {/* Footer */}
@@ -112,11 +118,11 @@ const Index = () => {
               <Instagram className="h-5 w-5" strokeWidth={1.6} />
             </a>
             <a
-              href="https://wa.me/556296093076"
+              href={CONSULTA_LINK}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"
-              onClick={() => (window as any).fbq?.('track', 'Contact')}
+              onClick={trackContact}
               className="flex h-10 w-10 items-center justify-center rounded-full bg-card border border-border text-muted-foreground transition-colors hover:text-primary hover:border-accent"
             >
               <MessageCircle className="h-5 w-5" strokeWidth={1.6} />
@@ -138,7 +144,7 @@ const Index = () => {
             <span>Clínica Vizz | Setor Marista</span>
           </a>
 
-          <p className="text-xs text-muted-foreground/60">
+          <p className="text-xs text-muted-foreground">
             Dra. Isabella Tovar | CRM 27286 GO
           </p>
         </footer>
