@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         heading: ['"Cormorant Garamond"', "serif"],
         body: ["Montserrat", "sans-serif"],
+        display: ['"Cormorant Garamond"', "Georgia", "serif"],
       },
       colors: {
         border: "hsl(var(--border))",
