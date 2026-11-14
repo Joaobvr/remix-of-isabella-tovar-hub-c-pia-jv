@@ -44,7 +44,7 @@ const Hero = () => {
             className="heading-hero mt-3"
             style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 500,
+              fontWeight: 600,
               fontSize: "clamp(1.3rem, 4.2vw, 1.85rem)",
               lineHeight: 1.4,
               letterSpacing: 0,
