@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Home } from "lucide-react";
+import { ArrowRight, Home, Instagram } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -198,14 +198,24 @@ const PageHeader = ({
                     {ctaLabel}
                   </button>
                 )}
-                <a
-                  href="/"
-                  className="flex items-center justify-center gap-2 py-2 text-[0.78rem] tracking-wide transition-opacity hover:opacity-70"
-                  style={{ color: BRAND.ink }}
-                >
-                  <Home className="h-4 w-4" strokeWidth={1.6} />
-                  Página inicial
-                </a>
+                <div className="flex items-center justify-center gap-4 pt-1">
+                  <a
+                    href="/"
+                    aria-label="Página inicial"
+                    className="icon-circle h-11 w-11 transition-transform duration-200 hover:scale-105"
+                  >
+                    <Home className="h-5 w-5" strokeWidth={1.6} />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/dra.isabellatovar/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram da Dra. Isabella Tovar"
+                    className="icon-circle h-11 w-11 transition-transform duration-200 hover:scale-105"
+                  >
+                    <Instagram className="h-5 w-5" strokeWidth={1.6} />
+                  </a>
+                </div>
               </div>
             </SheetContent>
           </Sheet>
