@@ -11,7 +11,7 @@ const CONSULTA_LINK = whatsappLink("Olá! Vim pelo site e gostaria de agendar um
 const trackContact = () => (window as any).fbq?.("track", "Contact");
 
 const services = [
-  { icon: Activity, label: "Emagrecimento e Recomposição Corporal", description: "Tratamento para emagrecer preservando sua massa muscular, sua saúde metabólica e sua beleza.", href: "https://emagrecimento.draisabellatovar.com.br/" },
+  { icon: Activity, label: "Emagrecimento e Recomposição Corporal", description: "Tratamento para emagrecer preservando sua massa muscular, sua saúde metabólica e sua beleza.", href: "/emagrecimento" },
   { icon: Sparkles, label: "FF Sculpt | Harmonização Corporal", description: "Técnica patenteada que promove redução progressiva de gordura localizada e da flacidez.", href: "https://ffsculpt.draisabellatovar.com.br/" },
   { icon: Heart, label: "Regeneração e Estética Íntima", description: "Procedimentos para melhorar a estética e a funcionalidade da região íntima, tanto da parte externa quanto interna da vagina.", href: "https://intima.draisabellatovar.com.br/" },
   { icon: Syringe, label: "Terapias Injetáveis", description: "Protocolos ajustáveis para otimizar seu metabolismo em diversos contextos, como proteção capilar, disposição e controle de inflamação crônica.", href: "https://injetaveis.draisabellatovar.com.br/" },
