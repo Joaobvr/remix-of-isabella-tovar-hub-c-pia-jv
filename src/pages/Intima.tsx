@@ -94,7 +94,7 @@ function LandingPage() {
             <Eyebrow>Harmonização Íntima Feminina</Eyebrow>
             <h1 className="title-sans text-[clamp(2rem,6vw,3.4rem)] leading-[1.15]">
               Redescubra sua{" "}
-              <em className="italic text-foreground/70">feminilidade</em>,
+              <em className="italic text-[#4A543B]">feminilidade</em>,
               <br className="hidden md:block" /> confiança e bem-estar íntimo.
             </h1>
             <p className="mt-8 text-lg md:text-xl text-muted-foreground max-w-xl leading-relaxed">
@@ -188,16 +188,16 @@ function LandingPage() {
       <Section id="metodo" className="bg-primary text-background">
         <div className="grid md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
-            <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-background/60 mb-6">
+            <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-background/90 mb-6">
               <span className="h-px w-8 bg-background/40" />
               O método
             </div>
             <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] text-background">
               Procedimentos sem corte,{" "}
-              <em className="italic text-background/60">sem cicatrizes</em>,
+              <em className="italic text-[#262B1F]">sem cicatrizes</em>,
               com recuperação rápida.
             </h2>
-            <p className="mt-6 text-background/70 leading-relaxed">
+            <p className="mt-6 text-background/90 leading-relaxed">
               Uma abordagem moderna que une tecnologia, ciência e sensibilidade
               clínica para resultados naturais e progressivos.
             </p>
@@ -235,7 +235,7 @@ function LandingPage() {
             <Eyebrow>Benefícios funcionais</Eyebrow>
             <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)]">
               Mais do que estética. Saúde, conforto e{" "}
-              <em className="italic text-foreground/60">qualidade de vida</em>.
+              <em className="italic text-[#4A543B]">qualidade de vida</em>.
             </h2>
           </div>
           <div className="md:col-span-7 space-y-8">
@@ -293,7 +293,7 @@ function LandingPage() {
             <Eyebrow>Sobre a médica</Eyebrow>
             <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-8">
               Um olhar integral sobre a{" "}
-              <em className="italic text-foreground/60">saúde da mulher</em>.
+              <em className="italic text-[#4A543B]">saúde da mulher</em>.
             </h2>
             <div className="space-y-5 text-foreground/80 leading-relaxed">
               <p>
@@ -335,7 +335,7 @@ function LandingPage() {
           <FlowerMark className="w-12 h-12 mx-auto mb-8 opacity-60" />
           <h2 className="title-sans text-[clamp(1.7rem,5vw,2.6rem)] max-w-3xl mx-auto">
             Cuidar da sua intimidade também é{" "}
-            <em className="italic text-foreground/70">cuidar de você</em>.
+            <em className="italic text-[#4A543B]">cuidar de você</em>.
           </h2>
           <p className="mt-8 text-lg text-muted-foreground max-w-xl mx-auto">
             Dê o primeiro passo. Uma conversa segura, acolhedora e sem
