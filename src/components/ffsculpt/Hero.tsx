@@ -44,20 +44,23 @@ const Hero = () => {
             className="heading-hero mt-3"
             style={{
               fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 700,
-              fontSize: "clamp(1.6rem, 5.4vw, 2.5rem)",
-              lineHeight: 1.22,
-              letterSpacing: "-0.01em",
+              fontWeight: 400,
+              fontSize: "clamp(1.3rem, 4.2vw, 1.85rem)",
+              lineHeight: 1.4,
+              letterSpacing: 0,
+              color: "#4A4642",
             }}
           >
             Redefina suas curvas com segurança, eficiência, sem cortes e sem cicatrizes
             com o{" "}
             <em
+              className="mt-1 block"
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
-                fontWeight: 500,
-                fontSize: "1.18em",
-                letterSpacing: 0,
+                fontWeight: 600,
+                fontSize: "clamp(2.6rem, 9vw, 3.8rem)",
+                lineHeight: 1.05,
+                letterSpacing: "-0.01em",
                 color: "var(--rose-hex)",
               }}
             >
