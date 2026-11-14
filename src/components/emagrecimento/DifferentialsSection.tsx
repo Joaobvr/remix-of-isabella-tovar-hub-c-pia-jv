@@ -32,8 +32,8 @@ const DifferentialsSection = () => (
             className="animate-on-scroll group bg-background rounded-xl p-4 border border-border/60 hover:border-gold/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-gold/5 text-center"
             style={{ transitionDelay: `${i * 60}ms` }}
           >
-            <div className="w-9 h-9 rounded-lg bg-primary/8 flex items-center justify-center mb-2 mx-auto group-hover:bg-primary/15 transition-colors">
-              <Icon className="w-4 h-4 text-primary" />
+            <div className="icon-circle w-9 h-9 mb-2 mx-auto">
+              <Icon className="w-4 h-4" />
             </div>
             <p className="font-body text-xs font-medium text-foreground leading-tight">{label}</p>
           </div>

@@ -47,8 +47,8 @@ const ProtocolsSection = () => {
               const cardBody = (
                 <>
                   <div className="flex items-center gap-3">
-                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center">
-                      <Check className="w-4 h-4 text-primary" />
+                    <div className="icon-circle w-7 h-7">
+                      <Check className="w-4 h-4" />
                     </div>
                     <span className="text-[0.9rem] text-foreground font-light flex-1">
                       {protocol.name}

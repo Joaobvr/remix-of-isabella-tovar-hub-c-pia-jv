@@ -82,15 +82,9 @@ const DoctorSection = () => {
                 className="card-soft card-soft-hover fade-up"
                 style={{ padding: "22px 18px" }}
               >
-                <p.icon
-                  strokeWidth={1.2}
-                  style={{
-                    width: 32,
-                    height: 32,
-                    color: "var(--champagne-hex)",
-                    marginBottom: 14,
-                  }}
-                />
+                <div className="icon-circle" style={{ width: 52, height: 52, marginBottom: 14 }}>
+                  <p.icon strokeWidth={1.4} style={{ width: 26, height: 26 }} />
+                </div>
                 <h3
                   className="font-display"
                   style={{

@@ -17,7 +17,7 @@
     --popover: 40 30% 97%;
     --popover-foreground: 90 18% 18%;
 
-    --primary: 85 18% 28%;
+    --primary: 80 13.4% 43.9%; /* Verde Oliva da ID #757F61 */
     --primary-foreground: 40 30% 97%;
 
     --secondary: 80 12% 88%;
@@ -29,16 +29,16 @@
     --accent: 18 55% 82%;
     --accent-foreground: 90 18% 18%;
 
-    --gold: 75 22% 42%;
+    --gold: 80 13.4% 43.9%;
     --gold-light: 18 55% 86%;
-    --gold-dark: 90 22% 24%;
+    --gold-dark: 80 13.4% 43.9%;
 
     --destructive: 0 60% 50%;
     --destructive-foreground: 30 25% 96%;
 
     --border: 60 12% 86%;
     --input: 60 12% 90%;
-    --ring: 75 22% 42%;
+    --ring: 80 13.4% 43.9%;
 
     --radius: 1rem;
 
@@ -112,7 +112,7 @@
   }
 
   .service-banner:hover {
-    box-shadow: 0 2px 4px hsl(90 18% 18% / 0.06), 0 12px 32px -12px hsl(75 22% 42% / 0.25);
+    box-shadow: 0 2px 4px hsl(90 18% 18% / 0.06), 0 12px 32px -12px hsl(var(--primary) / 0.25);
     border-color: hsl(var(--gold));
   }
 
@@ -183,7 +183,7 @@
   --foreground: 30 10% 20%;
   --card: 30 25% 95%;
   --card-foreground: 30 10% 20%;
-  --primary: 90 14% 42%;
+  --primary: 80 13.4% 43.9%;
   --primary-foreground: 30 33% 97%;
   --secondary: 0 25% 80%;
   --secondary-foreground: 30 10% 20%;
@@ -193,10 +193,10 @@
   --accent-foreground: 30 33% 97%;
   --border: 30 15% 85%;
   --input: 30 15% 85%;
-  --ring: 90 14% 42%;
+  --ring: 80 13.4% 43.9%;
   --radius: 0.75rem;
   --nude: 25 30% 90%;
-  --olive: 90 14% 42%;
+  --olive: 80 13.4% 43.9%;
   --rose: 0 25% 80%;
   --gold: 38 38% 59%;
   --cream: 30 33% 97%;
@@ -520,7 +520,7 @@
   --card-foreground: 80 10% 14%;
   --popover: 36 33% 96%;
   --popover-foreground: 80 10% 14%;
-  --primary: 82 16% 42%;
+  --primary: 80 13.4% 43.9%;
   --primary-foreground: 36 33% 97%;
   --secondary: 20 45% 88%;
   --secondary-foreground: 80 10% 14%;
@@ -532,18 +532,18 @@
   --destructive-foreground: 36 33% 97%;
   --border: 36 18% 86%;
   --input: 36 18% 86%;
-  --ring: 82 16% 42%;
+  --ring: 80 13.4% 43.9%;
   --radius: 12px;
-  --sage: 82 16% 42%;
-  --sage-dark: 85 18% 28%;
-  --sage-light: 80 14% 62%;
+  --sage: 80 13.4% 43.9%;
+  --sage-dark: 80 13.4% 43.9%;
+  --sage-light: 83 13% 88%;
   --peach: 18 55% 82%;
   --peach-dark: 16 45% 70%;
   --cream: 36 33% 96%;
   --cream-dark: 36 22% 90%;
   --warm: 30 22% 93%;
   --deep: 80 12% 16%;
-  --charcoal: 85 14% 20%;
+  --charcoal: 80 13.4% 43.9%;
   --font-serif: "Cormorant Garamond", serif;
   --font-sans: "Montserrat", sans-serif;
 
@@ -596,7 +596,7 @@
   --card-foreground: 74.3 32.8% 18.4%;
   --popover: 0 0% 100%;
   --popover-foreground: 74.3 32.8% 18.4%;
-  --primary: 68.8 18.6% 43.9%;
+  --primary: 80 13.4% 43.9%;
   --primary-foreground: 43.9 40.1% 97.6%;
   --secondary: 43.8 31.5% 90.8%;
   --secondary-foreground: 74.3 32.8% 18.4%;
@@ -608,7 +608,7 @@
   --destructive-foreground: 210 34.5% 98%;
   --border: 64.1 19.1% 84.7%;
   --input: 64.1 19.1% 84.7%;
-  --ring: 68.8 18.6% 43.9%;
+  --ring: 80 13.4% 43.9%;
   --radius: 1rem;
   --peach-pink: #EFD0C2;
   --font-serif: "Cormorant Garamond", serif;
@@ -637,4 +637,16 @@ html {
 
 :where(.lp-emagrecimento, .lp-ffsculpt, .lp-intima, .lp-injetaveis) [id] {
   scroll-margin-top: 96px;
+}
+
+/* ===== Círculo atrás dos ícones (todas as páginas) =====
+   Verde claro e sem saturação, sempre visível */
+.icon-circle {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-color: #E3E6DD;
+  color: #757F61;
 }

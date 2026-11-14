@@ -104,7 +104,7 @@ function LandingPage() {
               <Button
                 asChild
                 size="lg"
-                className="rounded-full h-14 px-8 text-sm tracking-wide bg-foreground text-background hover:bg-foreground/90"
+                className="rounded-full h-14 px-8 text-sm tracking-wide bg-primary text-background hover:bg-primary/90"
               >
                 <a
                   href="https://wa.me/556296093076?text=Ol%C3%A1%2C%20gostaria%20de%20entender%20se%20a%20harmoniza%C3%A7%C3%A3o%20%C3%ADntima%20%C3%A9%20para%20mim."
@@ -192,7 +192,7 @@ function LandingPage() {
       {/* 3. TRANSFORMAÇÃO — removido */}
 
       {/* 4. DIFERENCIAL DO MÉTODO */}
-      <Section id="metodo" className="bg-foreground text-background">
+      <Section id="metodo" className="bg-primary text-background">
         <div className="grid md:grid-cols-12 gap-12">
           <div className="md:col-span-5">
             <div className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.25em] text-background/60 mb-6">
@@ -221,9 +221,11 @@ function LandingPage() {
             ].map(({ Icon, label }, i) => (
               <div
                 key={i}
-                className="bg-foreground p-8 flex flex-col gap-4 hover:bg-foreground/95 transition-colors"
+                className="bg-primary p-8 flex flex-col gap-4 hover:bg-primary/95 transition-colors"
               >
-                <Icon className="w-6 h-6 text-[var(--peach-pink)]" strokeWidth={1.2} />
+                <div className="icon-circle w-12 h-12">
+                  <Icon className="w-6 h-6" strokeWidth={1.4} />
+                </div>
                 <p className="font-serif text-xl text-background">{label}</p>
               </div>
             ))}
@@ -347,7 +349,7 @@ function LandingPage() {
           <Button
             asChild
             size="lg"
-            className="mt-12 rounded-full h-14 px-10 text-sm tracking-wide bg-foreground text-background hover:bg-foreground/90"
+            className="mt-12 rounded-full h-14 px-10 text-sm tracking-wide bg-primary text-background hover:bg-primary/90"
           >
             <a
               href="https://wa.me/556296093076?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o."

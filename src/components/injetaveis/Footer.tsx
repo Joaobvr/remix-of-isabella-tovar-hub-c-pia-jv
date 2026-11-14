@@ -5,12 +5,12 @@ const Footer = () => (
         <div className="font-serif text-base text-cream tracking-wider">
           Dra. Isabella <span className="text-primary">Tovar</span>
         </div>
-        <p className="text-[0.68rem] text-cream/40 mt-1">MÉDICA | CRM: 27286 GO</p>
+        <p className="text-[0.68rem] text-cream/80 mt-1">MÉDICA | CRM: 27286 GO</p>
       </div>
-      <p className="text-[0.72rem] text-cream/40 text-center max-w-xs">
+      <p className="text-[0.72rem] text-cream/80 text-center max-w-xs">
         Os tratamentos são definidos após avaliação médica individual.
       </p>
-      <div className="text-[0.68rem] text-cream/35 tracking-wider">
+      <div className="text-[0.68rem] text-cream/75 tracking-wider">
         © {new Date().getFullYear()} Todos os direitos reservados.
       </div>
     </div>
