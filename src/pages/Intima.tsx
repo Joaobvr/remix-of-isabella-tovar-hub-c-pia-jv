@@ -92,7 +92,7 @@ function LandingPage() {
         <div className="mx-auto max-w-6xl grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-7">
             <Eyebrow>Harmonização Íntima Feminina</Eyebrow>
-            <h1 className="font-serif text-[clamp(2.5rem,7vw,5.25rem)] leading-[1.02] tracking-tight">
+            <h1 className="title-sans text-[clamp(2rem,6vw,3.4rem)] leading-[1.15]">
               Redescubra sua{" "}
               <em className="italic text-foreground/70">feminilidade</em>,
               <br className="hidden md:block" /> confiança e bem-estar íntimo.

@@ -40,32 +40,9 @@ const Hero = () => {
       <div style={{ background: "#FAF7F4", padding: "36px 28px 60px" }}>
         <div className="max-w-xl">
           <span className="eyebrow mb-3">Método FFSculpt · Goiânia</span>
-          <h1
-            className="heading-hero mt-3"
-            style={{
-              fontFamily: "'Montserrat', sans-serif",
-              fontWeight: 600,
-              fontSize: "clamp(1.3rem, 4.2vw, 1.85rem)",
-              lineHeight: 1.4,
-              letterSpacing: 0,
-              color: "#4A4642",
-            }}
-          >
+          <h1 className="heading-hero title-sans mt-3 text-[clamp(1.6rem,4.6vw,2.4rem)]" style={{ lineHeight: 1.25 }}>
             Redefina suas curvas com segurança, eficiência, sem cortes e sem cicatrizes
-            com o{" "}
-            <em
-              className="mt-1 block"
-              style={{
-                fontFamily: "'Cormorant Garamond', serif",
-                fontWeight: 600,
-                fontSize: "clamp(2.6rem, 9vw, 3.8rem)",
-                lineHeight: 1.05,
-                letterSpacing: "-0.01em",
-                color: "var(--rose-hex)",
-              }}
-            >
-              Método FFSculpt.
-            </em>
+            com o <em style={{ color: "var(--rose-hex)" }}>Método FFSculpt.</em>
           </h1>
           <div className="hairline" />
           <p

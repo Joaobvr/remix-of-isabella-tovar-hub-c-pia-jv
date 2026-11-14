@@ -18,7 +18,7 @@ const HeroSection = () => (
     <div className="max-w-7xl mx-auto w-full relative z-10">
       <div className="max-w-2xl mx-auto text-center">
 
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading leading-[1.15] mb-6 text-foreground">
+        <h1 className="title-sans text-[clamp(1.9rem,5.6vw,3rem)] leading-[1.2] mb-6 text-foreground">
           Emagreça com saúde,{" "}
           <span className="italic text-primary">beleza</span> e disposição
         </h1>

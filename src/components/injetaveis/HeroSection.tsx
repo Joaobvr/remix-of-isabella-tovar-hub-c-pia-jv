@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       {/* Text Content */}
       <div className="max-w-2xl animate-fade-up">
-        <h1 className="section-heading text-[clamp(2rem,4.5vw,3.2rem)] mb-6">
+        <h1 className="section-heading title-sans text-[clamp(1.7rem,4.8vw,2.6rem)] leading-[1.25] mb-6">
           Promova o <em className="italic text-primary">equilíbrio</em> do seu organismo e a{" "}
           <em className="italic text-primary">alta performance</em> metabólica com precisão e segurança
         </h1>
