@@ -224,7 +224,7 @@ const DoctorSection = () => {
                                 width: 4,
                                 height: 4,
                                 borderRadius: "50%",
-                                background: "var(--marsala-hex, #9B7178)",
+                                background: "var(--rose-hex)",
                                 flexShrink: 0,
                               }}
                             />

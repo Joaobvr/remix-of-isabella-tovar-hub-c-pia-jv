@@ -85,7 +85,7 @@ const TechniqueSection = () => {
           className="fade-up mt-12 text-center"
           style={{
             background: "var(--rose-light-hex)",
-            border: "1px solid rgba(155,113,120,0.14)",
+            border: "1px solid rgba(156,98,84,0.14)",
             borderRadius: 16,
             padding: "36px 26px",
           }}
