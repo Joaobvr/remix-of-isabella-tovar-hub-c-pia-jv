@@ -16,7 +16,7 @@ const DifferentialsSection = () => (
         <span className="text-sm font-body tracking-[0.2em] uppercase text-gold mb-4 block">
           Abordagem completa
         </span>
-        <h2 className="text-3xl md:text-4xl font-heading mb-4 text-foreground">
+        <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-4 text-foreground">
           Ferramentas de otimização
         </h2>
         <div className="w-16 h-[2px] bg-gold mx-auto mb-6" />

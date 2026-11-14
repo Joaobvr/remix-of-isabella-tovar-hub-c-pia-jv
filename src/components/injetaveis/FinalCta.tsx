@@ -7,7 +7,7 @@ const FinalCta = () => (
 
     <div className="relative z-10 max-w-2xl mx-auto">
       <p className="eyebrow mb-6 text-cream/80">Pronto para começar?</p>
-      <h2 className="font-serif text-[clamp(2rem,4vw,3.2rem)] font-light text-cream leading-tight mb-5">
+      <h2 className="title-sans text-[clamp(1.7rem,5vw,2.6rem)] text-cream mb-5">
         Seu protocolo <em className="italic text-sage-light">personalizado</em><br />
         começa aqui
       </h2>

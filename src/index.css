@@ -208,7 +208,7 @@
   -webkit-font-smoothing: antialiased;
 }
 
-.lp-emagrecimento :is(h1, h2, h3, h4, h5, h6) {
+:where(.lp-emagrecimento) :is(h1, h2, h3, h4, h5, h6) {
   font-family: "Cormorant Garamond", serif;
 }
 
@@ -649,4 +649,20 @@ html {
   border-radius: 9999px;
   background-color: #E3E6DD;
   color: #757F61;
+}
+
+/* ===== Títulos das seções (páginas de tratamento) =====
+   Montserrat; palavras destacadas mantêm a cor e ficam mais grossas */
+.title-sans {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+}
+
+.title-sans :is(em, .italic) {
+  font-family: inherit;
+  font-weight: 700;
+  font-style: normal;
 }

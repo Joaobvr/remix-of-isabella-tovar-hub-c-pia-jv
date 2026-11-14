@@ -17,7 +17,7 @@ const AboutSection = () => (
       {/* Text */}
       <div>
         <p className="eyebrow mb-5">Conheça a especialista</p>
-        <h2 className="section-heading text-[clamp(1.8rem,3vw,2.6rem)] mb-7">
+        <h2 className="section-heading title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-7">
           Dra. Isabella <em className="italic text-primary">Tovar</em>
         </h2>
         <p className="text-[0.9rem] text-muted-foreground leading-[1.9] mb-10">

@@ -157,7 +157,7 @@ function LandingPage() {
         <div className="grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <Eyebrow>Você se reconhece?</Eyebrow>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+            <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)]">
               Sentir-se bem com seu corpo é um direito seu.
             </h2>
           </div>
@@ -192,7 +192,7 @@ function LandingPage() {
               <span className="h-px w-8 bg-background/40" />
               O método
             </div>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight text-background">
+            <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] text-background">
               Procedimentos sem corte,{" "}
               <em className="italic text-background/60">sem cicatrizes</em>,
               com recuperação rápida.
@@ -233,7 +233,7 @@ function LandingPage() {
         <div className="grid md:grid-cols-12 gap-12 items-start">
           <div className="md:col-span-5 md:sticky md:top-20">
             <Eyebrow>Benefícios funcionais</Eyebrow>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+            <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)]">
               Mais do que estética. Saúde, conforto e{" "}
               <em className="italic text-foreground/60">qualidade de vida</em>.
             </h2>
@@ -291,7 +291,7 @@ function LandingPage() {
 
           <div className="md:col-span-7">
             <Eyebrow>Sobre a médica</Eyebrow>
-            <h2 className="font-serif text-4xl md:text-5xl leading-tight mb-8">
+            <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-8">
               Um olhar integral sobre a{" "}
               <em className="italic text-foreground/60">saúde da mulher</em>.
             </h2>
@@ -333,7 +333,7 @@ function LandingPage() {
           }}
         >
           <FlowerMark className="w-12 h-12 mx-auto mb-8 opacity-60" />
-          <h2 className="font-serif text-4xl md:text-6xl leading-[1.05] max-w-3xl mx-auto">
+          <h2 className="title-sans text-[clamp(1.7rem,5vw,2.6rem)] max-w-3xl mx-auto">
             Cuidar da sua intimidade também é{" "}
             <em className="italic text-foreground/70">cuidar de você</em>.
           </h2>

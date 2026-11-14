@@ -26,7 +26,7 @@ const AboutSection = () => (
           <span className="text-sm font-body tracking-[0.2em] uppercase text-gold mb-4 block">
             Sobre a Dra. Isabella
           </span>
-          <h2 className="text-3xl md:text-4xl font-heading mb-6 text-foreground leading-tight">
+          <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-6 text-foreground">
             Uma abordagem <span className="italic text-primary">integral</span> do seu corpo
           </h2>
           <div className="space-y-4 text-muted-foreground font-body leading-relaxed">

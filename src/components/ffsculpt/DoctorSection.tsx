@@ -69,7 +69,7 @@ const DoctorSection = () => {
         <div className="container-wide">
           <div className="max-w-2xl fade-up">
             <span className="eyebrow">Quatro pilares</span>
-            <h2 className="heading-section mt-3">
+            <h2 className="heading-section title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mt-3">
               Por que tratar com a <em>Dra. Isabella</em>?
             </h2>
             <div className="hairline" />
@@ -86,10 +86,10 @@ const DoctorSection = () => {
                   <p.icon strokeWidth={1.4} style={{ width: 26, height: 26 }} />
                 </div>
                 <h3
-                  className="font-display"
+                  className="title-sans"
                   style={{
-                    fontSize: "1.1rem",
-                    fontWeight: 500,
+                    fontSize: "1rem",
+                    fontWeight: 600,
                     lineHeight: 1.3,
                     marginBottom: 7,
                   }}
@@ -131,7 +131,7 @@ const DoctorSection = () => {
           {/* Content */}
           <div className="fade-up">
             <span className="eyebrow">Sua médica</span>
-            <h2 className="heading-section mt-3">
+            <h2 className="heading-section title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mt-3">
               Cuidado integral, com olhar <em>feminino</em>.
             </h2>
             <div className="hairline" />

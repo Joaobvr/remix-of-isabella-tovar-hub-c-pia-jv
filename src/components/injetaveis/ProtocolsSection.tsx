@@ -33,7 +33,7 @@ const ProtocolsSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-14">
           <p className="eyebrow mb-5">Objetivos que podem ser maximizados</p>
-          <h2 className="section-heading text-[clamp(1.8rem,3.5vw,2.8rem)]">
+          <h2 className="section-heading title-sans text-[clamp(1.5rem,4.4vw,2.1rem)]">
             O que os protocolos{" "}
             <em className="italic text-primary">injetáveis podem oferecer</em>
           </h2>

@@ -49,7 +49,7 @@ const BeforeAfterSection = () => {
       <div className="container-wide">
         <div className="max-w-2xl fade-up">
           <span className="eyebrow">Transformações reais</span>
-          <h2 className="heading-section mt-3">
+          <h2 className="heading-section title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mt-3">
             Resultados obtidos com a técnica usada pela <em>Dra. Isabella</em>
           </h2>
           <div className="hairline" />

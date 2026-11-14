@@ -29,7 +29,7 @@ const TechniqueSection = () => {
       <div className="container-narrow">
         <div className="max-w-2xl fade-up">
           <span className="eyebrow">Método Exclusivo</span>
-          <h2 className="heading-section mt-3">
+          <h2 className="heading-section title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mt-3">
             O que é a técnica <em>FFSculpt</em>?
           </h2>
           <div className="hairline" />
@@ -102,8 +102,8 @@ const TechniqueSection = () => {
           >
             Acesso restrito
           </div>
-          <h3 className="heading-section">
-            Em Goiânia, apenas <span style={{ fontWeight: 500, color: "var(--text-primary-hex)" }}>duas médicas</span> credenciadas.
+          <h3 className="heading-section title-sans text-[clamp(1.3rem,3.8vw,1.7rem)]">
+            Em Goiânia, apenas <em style={{ color: "var(--text-primary-hex)" }}>duas médicas</em> credenciadas.
           </h3>
           <p className="text-elegant mt-4 max-w-xl mx-auto">
             A Dra. Isabella é uma delas. A exclusividade da técnica e os resultados

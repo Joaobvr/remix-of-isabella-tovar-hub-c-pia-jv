@@ -7,7 +7,7 @@ const FinalCTASection = () => (
   <section id="agendar" className="section-padding">
     <div className="max-w-3xl mx-auto text-center animate-on-scroll">
       <div className="bg-gradient-to-br from-primary/5 via-nude to-rose/10 rounded-3xl px-6 py-10 sm:p-12 md:p-16 border border-border/40">
-        <h2 className="text-3xl md:text-4xl font-heading mb-4 text-foreground leading-tight">
+        <h2 className="title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-4 text-foreground">
           Seu corpo precisa de <span className="italic text-primary">estratégia</span>, não de mais tentativas frustradas
         </h2>
         <p className="text-muted-foreground font-body mb-10 max-w-md mx-auto">

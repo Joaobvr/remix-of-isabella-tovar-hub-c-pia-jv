@@ -79,7 +79,7 @@ const ContactForm = () => {
             <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center" style={{ background: "var(--rose-light-hex)" }}>
               <CheckCircle className="w-10 h-10" style={{ color: "var(--rose-hex)" }} />
             </div>
-            <h2 className="heading-section mb-4">Pré-avaliação Enviada!</h2>
+            <h2 className="heading-section title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mb-4">Pré-avaliação Enviada!</h2>
             <p className="text-elegant max-w-md mx-auto">
               Obrigada pelo seu interesse! Você será redirecionada para o WhatsApp
               para finalizar o agendamento com nossa equipe.
@@ -95,7 +95,7 @@ const ContactForm = () => {
       <div className="container-narrow">
         <div className="max-w-2xl mb-10">
           <span className="eyebrow">Próximo Passo</span>
-          <h2 className="heading-section mt-3">
+          <h2 className="heading-section title-sans text-[clamp(1.5rem,4.4vw,2.1rem)] mt-3">
             Formulário de <em>Pré-Avaliação</em>
           </h2>
           <div className="hairline" />
