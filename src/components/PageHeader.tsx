@@ -35,6 +35,7 @@ type PageHeaderProps = {
 
 const BRAND = {
   terracota: "#9C6254",
+  oliva: "#757F61",
   offWhite: "#F4EFEC",
   ink: "#3F4535",
 };
@@ -108,12 +109,12 @@ const PageHeader = ({
               rel="noopener noreferrer"
               onClick={() => handleCta()}
               className={ctaClass}
-              style={{ backgroundColor: BRAND.terracota }}
+              style={{ backgroundColor: BRAND.oliva }}
             >
               {ctaLabel}
             </a>
           ) : (
-            <button type="button" onClick={() => handleCta()} className={ctaClass} style={{ backgroundColor: BRAND.terracota }}>
+            <button type="button" onClick={() => handleCta()} className={ctaClass} style={{ backgroundColor: BRAND.oliva }}>
               {ctaLabel}
             </button>
           )}
@@ -183,7 +184,7 @@ const PageHeader = ({
                     rel="noopener noreferrer"
                     onClick={() => handleCta(true)}
                     className={`${ctaClass} w-full py-3.5`}
-                    style={{ backgroundColor: BRAND.terracota }}
+                    style={{ backgroundColor: BRAND.oliva }}
                   >
                     {ctaLabel}
                   </a>
@@ -192,7 +193,7 @@ const PageHeader = ({
                     type="button"
                     onClick={() => handleCta(true)}
                     className={`${ctaClass} w-full py-3.5`}
-                    style={{ backgroundColor: BRAND.terracota }}
+                    style={{ backgroundColor: BRAND.oliva }}
                   >
                     {ctaLabel}
                   </button>
