@@ -221,12 +221,14 @@ function LandingPage() {
             ].map(({ Icon, label }, i) => (
               <div
                 key={i}
-                className="bg-primary p-8 flex flex-col gap-4 hover:bg-primary/95 transition-colors"
+                className="bg-primary px-6 py-5 flex flex-row items-center gap-4 hover:bg-primary/95 transition-colors"
               >
-                <div className="icon-circle w-12 h-12">
-                  <Icon className="w-6 h-6" strokeWidth={1.4} />
+                <div className="icon-circle w-11 h-11">
+                  <Icon className="w-5 h-5" strokeWidth={1.4} />
                 </div>
-                <p className="font-serif text-xl text-background">{label}</p>
+                <p className="text-[0.95rem] font-normal leading-snug text-background" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+                  {label}
+                </p>
               </div>
             ))}
           </div>
