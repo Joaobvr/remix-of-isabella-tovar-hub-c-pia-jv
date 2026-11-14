@@ -65,7 +65,7 @@ const DoctorSection = () => {
   return (
     <>
       {/* Pillars */}
-      <section className="section-padding bg-champagne-light">
+      <section id="por-que" className="section-padding bg-champagne-light">
         <div className="container-wide">
           <div className="max-w-2xl fade-up">
             <span className="eyebrow">Quatro pilares</span>
@@ -112,7 +112,7 @@ const DoctorSection = () => {
       </section>
 
       {/* Doctor profile + accordion */}
-      <section className="section-padding bg-cream">
+      <section id="sobre" className="section-padding bg-cream">
         <div className="container-wide grid md:grid-cols-2 gap-14 items-center">
           {/* Photo */}
           <div

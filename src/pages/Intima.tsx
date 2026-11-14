@@ -27,6 +27,18 @@ import {
   FlowerMark,
 } from "@/components/intima/Illustrations";
 import draIsabellaPhoto from "@/assets/intima/dra-isabella.jpg";
+import PageHeader from "@/components/PageHeader";
+
+const WHATSAPP_AGENDAR =
+  "https://wa.me/556296093076?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
+
+const TOPICS = [
+  { label: "Você se reconhece?", id: "conexao" },
+  { label: "O método", id: "metodo" },
+  { label: "Benefícios", id: "beneficios" },
+  { label: "Sobre a médica", id: "sobre" },
+  { label: "Agende sua avaliação", id: "contato" },
+];
 
 const Section = ({
   id,
@@ -60,23 +72,11 @@ function LandingPage() {
   }, []);
 
   return (
-    <main className="lp-intima bg-background text-foreground overflow-x-hidden">
-      {/* NAV */}
-      <header className="absolute top-0 inset-x-0 z-20 px-6 md:px-10 py-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <FlowerMark className="w-6 h-6" />
-          <span className="font-serif text-lg">Dra. Isabella Tovar</span>
-        </div>
-        <a
-          href="#contato"
-          className="hidden md:inline-flex text-xs uppercase tracking-[0.2em] text-foreground/70 hover:text-foreground transition"
-        >
-          Agendar avaliação
-        </a>
-      </header>
+    <main className="lp-intima bg-background text-foreground overflow-x-clip">
+      <PageHeader topics={TOPICS} ctaHref={WHATSAPP_AGENDAR} />
 
       {/* 1. HERO */}
-      <section className="relative min-h-[100svh] flex items-center px-6 md:px-10 pt-28 pb-20">
+      <section className="relative min-h-[100svh] flex items-center px-6 md:px-10 pt-12 pb-20">
         <div
           className="absolute inset-0 -z-10"
           style={{

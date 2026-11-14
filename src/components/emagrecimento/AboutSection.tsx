@@ -1,7 +1,7 @@
 import draIsabella from "@/assets/emagrecimento/dra-isabella.jpg";
 
 const AboutSection = () => (
-  <section className="section-padding">
+  <section id="sobre" className="section-padding">
     <div className="max-w-6xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
         {/* Visual */}

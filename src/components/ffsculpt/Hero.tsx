@@ -9,7 +9,7 @@ const scrollToForm = () => {
 
 const Hero = () => {
   return (
-    <section className="relative bg-cream pt-16">
+    <section className="relative bg-cream pt-4">
       {/* Photo on top */}
       <div className="relative w-full">
         <img

@@ -10,7 +10,7 @@ const pillars = [
 ];
 
 const DifferentialsSection = () => (
-  <section className="section-padding bg-card">
+  <section id="ferramentas" className="section-padding bg-card">
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-16 animate-on-scroll">
         <span className="text-sm font-body tracking-[0.2em] uppercase text-gold mb-4 block">

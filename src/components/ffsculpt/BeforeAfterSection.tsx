@@ -45,7 +45,7 @@ const CardFooter = ({ region, tag }: { region: string; tag: string }) => (
 
 const BeforeAfterSection = () => {
   return (
-    <section className="section-padding bg-cream">
+    <section id="resultados" className="section-padding bg-cream">
       <div className="container-wide">
         <div className="max-w-2xl fade-up">
           <span className="eyebrow">Transformações reais</span>

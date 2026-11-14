@@ -2,7 +2,7 @@ import { Button } from "@/components/injetaveis/Button";
 import draIsabella from "@/assets/injetaveis/dra-isabella.jpg";
 
 const AboutSection = () => (
-  <section className="px-6 md:px-12 py-24">
+  <section id="sobre" className="px-6 md:px-12 py-24">
     <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       {/* Image */}
       <div className="relative flex flex-col items-center">

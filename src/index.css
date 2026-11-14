@@ -551,7 +551,7 @@
   font-weight: 300;
   line-height: 1.7;
   letter-spacing: normal;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 :where(.lp-injetaveis) :is(h1, h2, h3, h4, h5, h6),
@@ -628,4 +628,13 @@
 
 :where(.lp-intima) .font-serif {
   font-family: var(--font-serif);
+}
+
+/* ===== Barra fixa do topo + menu das páginas de tratamento ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+:where(.lp-emagrecimento, .lp-ffsculpt, .lp-intima, .lp-injetaveis) [id] {
+  scroll-margin-top: 96px;
 }

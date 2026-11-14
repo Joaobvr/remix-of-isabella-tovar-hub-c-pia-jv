@@ -6,6 +6,16 @@ import DifferentialsSection from "@/components/emagrecimento/DifferentialsSectio
 import HowItWorksSection from "@/components/emagrecimento/HowItWorksSection";
 import FinalCTASection from "@/components/emagrecimento/FinalCTASection";
 import Footer from "@/components/emagrecimento/Footer";
+import PageHeader from "@/components/PageHeader";
+
+const WHATSAPP_URL = "https://wa.me/556296093076?text=Olá! Gostaria de agendar uma avaliação.";
+
+const TOPICS = [
+  { label: "Como funciona", id: "como-funciona" },
+  { label: "Ferramentas de otimização", id: "ferramentas" },
+  { label: "Sobre a Dra. Isabella", id: "sobre" },
+  { label: "Agende sua avaliação", id: "agendar" },
+];
 
 const Emagrecimento = () => {
   useScrollAnimation();
@@ -21,6 +31,7 @@ const Emagrecimento = () => {
 
   return (
     <div className="lp-emagrecimento min-h-screen bg-background">
+      <PageHeader topics={TOPICS} ctaHref={WHATSAPP_URL} />
       <HeroSection />
       <HowItWorksSection />
       <DifferentialsSection />

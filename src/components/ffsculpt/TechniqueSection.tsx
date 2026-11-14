@@ -23,7 +23,7 @@ const steps = [
 
 const TechniqueSection = () => {
   return (
-    <section className="section-padding bg-cream">
+    <section id="tecnica" className="section-padding bg-cream">
       <div className="container-narrow">
         <div className="max-w-2xl fade-up">
           <span className="eyebrow">Método Exclusivo</span>

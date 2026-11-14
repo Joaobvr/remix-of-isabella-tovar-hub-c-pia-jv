@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Navbar from "@/components/injetaveis/Navbar";
+import PageHeader from "@/components/PageHeader";
 import HeroSection from "@/components/injetaveis/HeroSection";
 import Divider from "@/components/injetaveis/Divider";
 import IntroSection from "@/components/injetaveis/IntroSection";
@@ -8,6 +8,13 @@ import CtaBand from "@/components/injetaveis/CtaBand";
 import AboutSection from "@/components/injetaveis/AboutSection";
 import FinalCta from "@/components/injetaveis/FinalCta";
 import Footer from "@/components/injetaveis/Footer";
+
+const TOPICS = [
+  { label: "Sobre os protocolos", id: "sobre-protocolos" },
+  { label: "O que os protocolos oferecem", id: "protocolos" },
+  { label: "Sobre a Dra. Isabella", id: "sobre" },
+  { label: "Agende sua consulta", id: "consulta" },
+];
 
 const Injetaveis = () => {
   useEffect(() => {
@@ -21,7 +28,7 @@ const Injetaveis = () => {
 
   return (
     <div className="lp-injetaveis min-h-screen bg-background text-foreground">
-      <Navbar />
+      <PageHeader topics={TOPICS} ctaHref="https://wa.me/556296093076" />
       <HeroSection />
       <Divider />
       <IntroSection />

@@ -3,7 +3,7 @@ import draIsabella from "@/assets/injetaveis/dra-isabella.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16 text-center">
+    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-10 pb-16 text-center">
       {/* Hero Image */}
       <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden mb-10 shadow-lg animate-fade-in">
         <img

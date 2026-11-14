@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const WHATSAPP_URL = "https://wa.me/556296093076?text=Olá! Gostaria de agendar uma avaliação.";
 
 const FinalCTASection = () => (
-  <section className="section-padding">
+  <section id="agendar" className="section-padding">
     <div className="max-w-3xl mx-auto text-center animate-on-scroll">
       <div className="bg-gradient-to-br from-primary/5 via-nude to-rose/10 rounded-3xl px-6 py-10 sm:p-12 md:p-16 border border-border/40">
         <h2 className="text-3xl md:text-4xl font-heading mb-4 text-foreground leading-tight">
