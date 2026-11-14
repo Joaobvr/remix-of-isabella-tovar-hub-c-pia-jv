@@ -14,7 +14,7 @@ const FinalCta = () => (
       <p className="text-[0.85rem] text-cream/85 mb-14 tracking-wide">
         Agende sua consulta e descubra o tratamento ideal para o seu corpo.
       </p>
-      <Button variant="sage" size="lg" className="px-14 py-6 h-auto text-[0.78rem] tracking-[0.2em]" asChild>
+      <Button variant="sage" size="lg" className="cta-gradient ring-1 ring-cream/50 px-14 py-6 h-auto text-[0.78rem] tracking-[0.2em]" asChild>
         <a href="https://wa.me/556296093076" target="_top" onClick={() => (window as any).fbq?.('track', 'Contact')}>Agendar consulta</a>
       </Button>
     </div>

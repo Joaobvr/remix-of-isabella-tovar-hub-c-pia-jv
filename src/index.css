@@ -666,3 +666,24 @@ html {
   font-weight: 700;
   font-style: normal;
 }
+
+/* ===== Botões de agendar: degradê verde (paleta da ID) em movimento lento ===== */
+@keyframes ctaGradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-gradient {
+  background-color: #757F61;
+  background-image: linear-gradient(110deg, #5A634B 0%, #757F61 35%, #8A947A 55%, #757F61 75%, #5A634B 100%);
+  background-size: 250% 100%;
+  animation: ctaGradientMove 9s ease-in-out infinite;
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-gradient {
+    animation: none;
+  }
+}

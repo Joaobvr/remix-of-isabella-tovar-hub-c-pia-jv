@@ -37,7 +37,7 @@ const HeroSection = () => (
             }
           }}
         >
-          <Button size="lg" className="rounded-full px-8 py-6 text-base gap-3 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
+          <Button size="lg" className="cta-gradient rounded-full px-8 py-6 text-base gap-3 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5">
             <Calendar className="w-5 h-5" />
             Agendar avaliação
           </Button>

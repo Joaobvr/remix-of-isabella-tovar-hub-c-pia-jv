@@ -62,7 +62,7 @@ const Hero = () => {
             o método FF Sculpt.
           </p>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-            <button onClick={scrollToForm} className="btn-primary">
+            <button onClick={scrollToForm} className="btn-primary cta-gradient">
               Quero minha pré-avaliação
             </button>
             <p className="text-tertiary-ink" style={{ fontSize: "0.72rem", marginTop: 22, textAlign: "center" }}>

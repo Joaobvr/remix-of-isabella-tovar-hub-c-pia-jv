@@ -16,7 +16,7 @@ const FinalCTASection = () => (
         <Button
           asChild
           size="lg"
-          className="w-full sm:w-auto max-w-full h-auto whitespace-normal rounded-full px-6 sm:px-10 py-4 sm:py-5 text-sm sm:text-base gap-3 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
+          className="cta-gradient w-full sm:w-auto max-w-full h-auto whitespace-normal rounded-full px-6 sm:px-10 py-4 sm:py-5 text-sm sm:text-base gap-3 bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20 transition-all duration-300 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5"
         >
           <a
             href={WHATSAPP_URL}

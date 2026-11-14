@@ -266,7 +266,7 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="btn-primary w-full justify-center"
+              className="btn-primary cta-gradient w-full justify-center"
               style={{ width: "100%" }}
             >
               {isSubmitting ? (

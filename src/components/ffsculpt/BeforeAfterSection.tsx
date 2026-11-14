@@ -145,7 +145,7 @@ const BeforeAfterSection = () => {
         </div>
 
         <div className="text-center mt-12 fade-up">
-          <button onClick={scrollToForm} className="btn-primary">
+          <button onClick={scrollToForm} className="btn-primary cta-gradient">
             Quero minha pré-avaliação
           </button>
         </div>
