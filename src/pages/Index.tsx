@@ -57,7 +57,7 @@ const Index = () => {
             </p>
 
             <p className="max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
-              Uso a medicina para melhorar a vida das minhas pacientes com Emagrecimento Saudável; Equilíbrio Hormonal e Metabólico; Harmonização Íntima e Corporal e Acompanhamento Ginecológico.
+              Acompanho mulheres em todas as fases da vida, com tratamentos personalizados e um cuidado próximo.
             </p>
 
             <p className="max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-wide leading-relaxed text-foreground italic">
