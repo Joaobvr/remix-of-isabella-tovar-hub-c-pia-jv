@@ -1,3 +1,5 @@
+import NumberedCard from "@/components/NumberedCard";
+
 const steps = [
   { num: "01", title: "Avaliação detalhada", desc: "Consulta individual com análise completa do seu histórico, exames, composição corporal e objetivos." },
   { num: "02", title: "Estratégia personalizada", desc: "Definição de um plano sob medida, respeitando sua biologia, rotina e preferências." },
@@ -18,16 +20,12 @@ const HowItWorksSection = () => (
         <div className="w-16 h-[2px] bg-gold mx-auto" />
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-4">
         {steps.map(({ num, title, desc }, i) => (
-          <div key={num} className="animate-on-scroll flex gap-5" style={{ transitionDelay: `${i * 100}ms` }}>
-            <div className="shrink-0">
-              <span className="font-heading text-4xl text-gold/40">{num}</span>
-            </div>
-            <div>
-              <h3 className="font-heading text-xl mb-2 text-foreground">{title}</h3>
-              <p className="font-body text-muted-foreground leading-relaxed">{desc}</p>
-            </div>
+          <div key={num} className="animate-on-scroll" style={{ transitionDelay: `${i * 100}ms` }}>
+            <NumberedCard num={num} title={title} className="h-full">
+              {desc}
+            </NumberedCard>
           </div>
         ))}
       </div>

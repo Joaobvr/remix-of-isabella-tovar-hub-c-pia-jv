@@ -1,3 +1,5 @@
+import NumberedCard from "@/components/NumberedCard";
+
 const steps = [
   {
     n: "01",
@@ -71,46 +73,11 @@ const TechniqueSection = () => {
         </div>
 
         {/* Steps */}
-        <div className="mt-10" style={{ borderTop: "1px solid var(--border-hex)" }}>
+        <div className="mt-10 flex flex-col gap-3">
           {steps.map((s) => (
-            <div
-              key={s.n}
-              className="flex gap-5"
-              style={{
-                padding: "22px 0",
-                borderBottom: "1px solid var(--border-hex)",
-              }}
-            >
-              <div
-                className="font-display flex-shrink-0"
-                style={{
-                  fontSize: "1.7rem",
-                  fontWeight: 300,
-                  color: "var(--champagne-hex)",
-                  lineHeight: 1,
-                  width: 28,
-                  paddingTop: 2,
-                }}
-              >
-                {s.n}
-              </div>
-              <div>
-                <h4
-                  style={{
-                    fontSize: "0.85rem",
-                    fontWeight: 500,
-                    color: "var(--text-primary-hex)",
-                    marginBottom: 5,
-                    fontFamily: "var(--font-body)",
-                  }}
-                >
-                  {s.title}
-                </h4>
-                <p style={{ fontSize: "0.9rem", color: "var(--text-secondary-hex)", lineHeight: 1.7 }}>
-                  {s.text}
-                </p>
-              </div>
-            </div>
+            <NumberedCard key={s.n} num={s.n} title={s.title}>
+              {s.text}
+            </NumberedCard>
           ))}
         </div>
 

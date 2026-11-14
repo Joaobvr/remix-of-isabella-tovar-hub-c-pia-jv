@@ -28,6 +28,7 @@ import {
 } from "@/components/intima/Illustrations";
 import draIsabellaPhoto from "@/assets/intima/dra-isabella.jpg";
 import PageHeader from "@/components/PageHeader";
+import NumberedCard from "@/components/NumberedCard";
 
 const WHATSAPP_AGENDAR =
   "https://wa.me/556296093076?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
@@ -160,7 +161,7 @@ function LandingPage() {
               Sentir-se bem com seu corpo é um direito seu.
             </h2>
           </div>
-          <div className="md:col-span-8 space-y-5">
+          <div className="md:col-span-8 space-y-3">
             {[
               "Incômodo com a aparência da região íntima",
               "Flacidez ou excesso de volume no monte de Vênus",
@@ -170,17 +171,9 @@ function LandingPage() {
               "Perda de confiança na intimidade",
               "Sensação de falta de firmeza interna",
             ].map((item, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-5 pb-5 border-b border-foreground/10"
-              >
-                <span className="font-serif text-2xl text-foreground/40 mt-1 w-8">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <p className="text-lg text-foreground/80 leading-relaxed flex-1">
-                  {item}
-                </p>
-              </div>
+              <NumberedCard key={i} num={String(i + 1).padStart(2, "0")} style={{ alignItems: "center" }}>
+                {item}
+              </NumberedCard>
             ))}
             <p className="font-serif text-2xl md:text-3xl italic mt-10 leading-snug text-foreground/90">
               Você não precisa aceitar isso como algo definitivo ou inevitável.
