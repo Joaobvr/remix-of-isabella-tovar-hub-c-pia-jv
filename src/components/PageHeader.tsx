@@ -148,25 +148,27 @@ const PageHeader = ({
               </div>
 
               <nav className="flex-1 overflow-y-auto px-4">
-                <ul>
+                <ul className="px-3">
                   {topics.map((topic) => (
-                    <li key={topic.id}>
+                    <li key={topic.id} className="border-b last:border-b-0" style={{ borderColor: "rgba(156, 98, 84, 0.18)" }}>
                       <button
                         type="button"
                         onClick={() => goTo(topic.id)}
-                        className="group flex w-full items-center justify-between gap-4 rounded-2xl px-3 py-4 text-left transition-colors hover:bg-white/70"
+                        className="group flex w-full items-center justify-between gap-4 py-4 text-left"
                       >
                         <span
-                          className="text-[1.45rem] leading-tight"
-                          style={{ fontFamily: "'Cormorant Garamond', serif", color: BRAND.ink }}
+                          className="text-[0.98rem] font-normal leading-snug tracking-wide transition-opacity group-hover:opacity-75"
+                          style={{ fontFamily: "'Montserrat', sans-serif", color: BRAND.ink }}
                         >
                           {topic.label}
                         </span>
-                        <ArrowRight
-                          className="h-4 w-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1"
-                          style={{ color: BRAND.terracota }}
-                          strokeWidth={1.6}
-                        />
+                        {/* Mesma seta com círculo de vidro dos cards da página inicial */}
+                        <span className="arrow-glass">
+                          <ArrowRight
+                            className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                            strokeWidth={1.8}
+                          />
+                        </span>
                       </button>
                     </li>
                   ))}
