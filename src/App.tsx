@@ -6,6 +6,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import Emagrecimento from "./pages/Emagrecimento.tsx";
 import FFSculpt from "./pages/FFSculpt.tsx";
+import Intima from "./pages/Intima.tsx";
+import Injetaveis from "./pages/Injetaveis.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -20,6 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/emagrecimento" element={<Emagrecimento />} />
           <Route path="/ffsculpt" element={<FFSculpt />} />
+          <Route path="/intima" element={<Intima />} />
+          <Route path="/injetaveis" element={<Injetaveis />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
