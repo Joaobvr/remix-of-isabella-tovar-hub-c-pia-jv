@@ -198,7 +198,7 @@
   --nude: 25 30% 90%;
   --olive: 80 13.4% 43.9%;
   --rose: 0 25% 80%;
-  --gold: 38 38% 59%;
+  --gold: 11.7 30% 47.1%; /* antes dourado; agora Terracota Suave */
   --cream: 30 33% 97%;
 
   font-family: "Montserrat", sans-serif;
@@ -241,9 +241,9 @@
     --rose-hex: #9C6254; /* Terracota Suave da ID */
     --rose-hover-hex: #86533F;
     --rose-light-hex: #F5E9E4;
-    --champagne-hex: #C4A07A;
-    --champagne-light-hex: #F6EFE6;
-    --champagne-line-hex: #DDD0BE;
+    --champagne-hex: #9C6254; /* antes dourado; agora Terracota Suave */
+    --champagne-light-hex: #F5E9E4;
+    --champagne-line-hex: #DDBFB5;
     --border-hex: #EDE7DF;
     --dark-hex: #2A2521;
 
