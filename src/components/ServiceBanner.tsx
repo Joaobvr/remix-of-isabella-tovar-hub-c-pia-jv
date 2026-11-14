@@ -35,10 +35,12 @@ const ServiceBanner = ({ icon: Icon, label, description, href = "#", isWhatsapp 
       <span className="flex-1 text-sm sm:text-base font-medium tracking-wide text-foreground">
         {label}
       </span>
-      <ArrowRight
-        className="h-4 w-4 text-muted-foreground transition-transform duration-300 group-hover:translate-x-1 group-hover:text-accent"
-        strokeWidth={1.8}
-      />
+      <span className="arrow-glass">
+        <ArrowRight
+          className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+          strokeWidth={1.8}
+        />
+      </span>
     </a>
   );
 
