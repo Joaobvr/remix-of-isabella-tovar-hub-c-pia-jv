@@ -26,7 +26,7 @@ const HeroSection = () => {
           </span>
         </p>
         <Button variant="sage" size="lg" className="cta-gradient px-12 py-6 h-auto text-[0.8rem]" asChild>
-          <a href="https://wa.me/556296093076" target="_top" onClick={() => (window as any).fbq?.('track', 'Contact')}>
+          <a href="https://wa.me/5562996093076" target="_top" onClick={() => (window as any).fbq?.('track', 'Contact')}>
             Agendar Avaliação
           </a>
         </Button>

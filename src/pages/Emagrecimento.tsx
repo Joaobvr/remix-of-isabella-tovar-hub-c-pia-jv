@@ -8,7 +8,7 @@ import FinalCTASection from "@/components/emagrecimento/FinalCTASection";
 import SiteFooter from "@/components/SiteFooter";
 import PageHeader from "@/components/PageHeader";
 
-const WHATSAPP_URL = "https://wa.me/556296093076?text=Olá! Gostaria de agendar uma avaliação.";
+const WHATSAPP_URL = "https://wa.me/5562996093076?text=Olá! Gostaria de agendar uma avaliação.";
 
 const TOPICS = [
   { label: "Como funciona", id: "como-funciona" },

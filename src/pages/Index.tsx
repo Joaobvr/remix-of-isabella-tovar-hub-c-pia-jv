@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
-const WHATSAPP_NUMBER = "556296093076";
+const WHATSAPP_NUMBER = "5562996093076";
 const whatsappLink = (message: string) =>
   `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 const CONSULTA_LINK = whatsappLink("Olá! Vim pelo site e gostaria de agendar uma consulta com a Dra. Isabella.");

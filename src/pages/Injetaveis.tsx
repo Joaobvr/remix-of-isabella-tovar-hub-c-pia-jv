@@ -28,7 +28,7 @@ const Injetaveis = () => {
 
   return (
     <div className="lp-injetaveis min-h-screen bg-background text-foreground">
-      <PageHeader topics={TOPICS} ctaHref="https://wa.me/556296093076" />
+      <PageHeader topics={TOPICS} ctaHref="https://wa.me/5562996093076" />
       <HeroSection />
       <Divider />
       <IntroSection />

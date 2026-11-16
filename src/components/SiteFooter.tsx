@@ -15,7 +15,7 @@ const COLORS = {
 };
 
 const WHATSAPP_URL =
-  "https://wa.me/556296093076?text=" +
+  "https://wa.me/5562996093076?text=" +
   encodeURIComponent("Olá! Vim pelo site e gostaria de agendar uma consulta com a Dra. Isabella.");
 const INSTAGRAM_URL = "https://www.instagram.com/dra.isabellatovar/";
 const MAPS_URL = "https://share.google/g2a78rGG9zWkHfMgu";
@@ -61,7 +61,7 @@ const SiteFooter = () => (
         </a>
         <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={trackContact} className={linkClass}>
           <MessageCircle className="h-4 w-4 shrink-0" strokeWidth={1.5} style={{ color: COLORS.accent }} />
-          (62) 9609-3076
+          (62) 99609-3076
         </a>
         <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
           <MapPin className="h-4 w-4 shrink-0" strokeWidth={1.5} style={{ color: COLORS.accent }} />
