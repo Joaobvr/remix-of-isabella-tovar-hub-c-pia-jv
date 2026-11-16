@@ -1,4 +1,5 @@
 import draIsabella from "@/assets/emagrecimento/dra-isabella.jpg";
+import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 
 const AboutSection = () => (
   <section id="sobre" className="section-padding">
@@ -7,14 +8,9 @@ const AboutSection = () => (
         {/* Visual */}
         <div className="animate-on-scroll order-2 lg:order-1">
           <div className="relative">
-            <div className="w-full aspect-[3/4] rounded-3xl overflow-hidden border border-border/40">
+            <div className="relative w-full aspect-[3/4] rounded-3xl overflow-hidden border border-border/40">
               <img src={draIsabella} alt="Dra. Isabella Tovar" className="w-full h-full object-cover" />
-              <div className="absolute bottom-8 left-8 right-8">
-                <div className="bg-background/80 backdrop-blur-sm rounded-2xl p-5 border border-border/40">
-                  <p className="font-heading text-sm md:text-base text-foreground whitespace-nowrap">Dra. Isabella Tovar · Médica | CRM 27286 GO</p>
-                  
-                </div>
-              </div>
+              <DoctorPhotoBadge />
             </div>
             <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-gold/10 -z-10" />
             <div className="absolute -bottom-4 -left-4 w-32 h-32 rounded-full bg-primary/5 -z-10" />

@@ -29,6 +29,7 @@ import draIsabellaPhoto from "@/assets/intima/dra-isabella.jpg";
 import PageHeader from "@/components/PageHeader";
 import lotus from "@/assets/brand/lotus.png";
 import NumberedCard from "@/components/NumberedCard";
+import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 import SiteFooter from "@/components/SiteFooter";
 
 const WHATSAPP_AGENDAR =
@@ -281,12 +282,7 @@ function LandingPage() {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
-              <div className="relative z-10 text-foreground bg-background/80 backdrop-blur rounded-2xl p-5">
-                <p className="font-serif text-2xl leading-tight">Dra. Isabella Tovar</p>
-                <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mt-1">
-                  CRM: 27286 GO
-                </p>
-              </div>
+              <DoctorPhotoBadge />
             </div>
           </div>
 

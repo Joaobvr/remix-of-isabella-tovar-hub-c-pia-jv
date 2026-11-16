@@ -428,29 +428,6 @@
   }
   :where(.lp-ffsculpt) .hairline-center { margin-left: auto; margin-right: auto; }
 
-  :where(.lp-ffsculpt) .name-badge {
-    position: absolute;
-    bottom: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 14px 30px;
-    text-align: center;
-    white-space: nowrap;
-  }
-  :where(.lp-ffsculpt) .name-badge .name {
-    font-family: var(--font-display);
-    font-size: 1rem;
-    font-weight: 500;
-    margin-bottom: 3px;
-    color: #3F4535; /* verde escuro */
-  }
-  :where(.lp-ffsculpt) .name-badge .crm {
-    font-size: 0.63rem;
-    color: #F4EFEC; /* Off-White Rosado */
-    text-shadow: 0 1px 2px rgba(63, 69, 53, 0.45); /* sombra leve para o off-white não sumir no vidro claro */
-    letter-spacing: 0.06em;
-  }
-
   /* Fade-up scroll reveal */
   :where(.lp-ffsculpt) .fade-up {
     opacity: 0;
@@ -702,71 +679,3 @@ html {
   box-shadow: 0 1px 2px rgba(46, 54, 38, 0.04), 0 8px 24px -16px rgba(46, 54, 38, 0.1);
 }
 
-
-/* ===== Vidro "glass box" (baseado no snippet do botão "Get started") ===== */
-.glass-box {
-  --r: 9999px;
-  --tr: 15%;
-  z-index: 5;
-  border-radius: var(--r);
-  border: 1px double rgba(51, 51, 51, 0.08);
-  box-shadow:
-    inset 2px -2px 1px -1px rgba(255, 255, 255, 0.9),
-    inset -2px 2px 1px -1px rgba(255, 255, 255, 0.9),
-    inset 6px -6px 1px -6px rgba(255, 255, 255, 0.55),
-    inset -6px 6px 1px -6px rgba(255, 255, 255, 0.55),
-    inset 0 0 2px rgba(0, 0, 0, 0.8),
-    0 4px 8px rgba(0, 0, 0, 0.2);
-  /* um pouco de branco e desfoque a mais que no original, para o texto ficar legível sobre a foto */
-  background: rgba(245, 206, 196, 0.38); /* Rosa Chá bem suave, para contraste do texto */
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-}
-
-/* sombra escura difusa por baixo */
-.glass-box::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 35%;
-  left: 8px;
-  right: 8px;
-  height: calc(100% - 16px);
-  border-radius: var(--r);
-  border: 1px solid rgba(0, 0, 0, 0.9);
-  filter: blur(8px);
-  pointer-events: none;
-}
-
-/* reflexos brancos nos cantos */
-.glass-box::after {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  inset: 0;
-  border-radius: var(--r);
-  filter: blur(7px);
-  background: linear-gradient(
-    45deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    transparent var(--tr),
-    transparent calc(100% - var(--tr)),
-    rgba(255, 255, 255, 0.8) 100%
-  );
-  pointer-events: none;
-}
-
-.glass-box__overlay {
-  position: absolute;
-  inset: 4.5px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--r);
-  filter: blur(1px);
-  pointer-events: none;
-}
-
-.glass-box__content {
-  position: relative;
-  z-index: 2;
-  filter: drop-shadow(0 25px 3px rgba(102, 102, 102, 0.15));
-}

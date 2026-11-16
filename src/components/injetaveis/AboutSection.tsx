@@ -1,17 +1,16 @@
 import { Button } from "@/components/injetaveis/Button";
 import draIsabella from "@/assets/injetaveis/dra-isabella.jpg";
+import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 
 const AboutSection = () => (
   <section id="sobre" className="px-6 md:px-12 py-14 md:py-20">
     <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
       {/* Image */}
       <div className="relative flex flex-col items-center">
-        <div className="w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
           <img src={draIsabella} alt="Dra. Isabella Tovar" className="w-full h-full object-cover object-top" />
+          <DoctorPhotoBadge />
         </div>
-        <p className="mt-4 text-[0.78rem] tracking-[0.15em] uppercase text-muted-foreground text-center">
-          Dra. Isabella Tovar <span className="text-primary">|</span> Médica CRM 27286 GO
-        </p>
       </div>
 
       {/* Text */}

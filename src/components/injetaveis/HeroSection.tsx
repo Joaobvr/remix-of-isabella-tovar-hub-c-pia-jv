@@ -1,5 +1,5 @@
 import { Button } from "@/components/injetaveis/Button";
-import draIsabella from "@/assets/injetaveis/dra-isabella.jpg";
+import draIsabella from "@/assets/injetaveis/dra-isabella-topo.jpg";
 
 const HeroSection = () => {
   return (

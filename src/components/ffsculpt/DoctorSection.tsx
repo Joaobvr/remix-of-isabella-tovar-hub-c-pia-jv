@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GraduationCap, Heart, Award, UserCheck } from "lucide-react";
 import doctorImage from "@/assets/ffsculpt/doctor-portrait.jpg";
+import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 
 const pillars = [
   {
@@ -122,13 +123,7 @@ const DoctorSection = () => {
               className="w-full h-full"
               style={{ objectFit: "cover", objectPosition: "center top" }}
             />
-            <div className="name-badge glass-box">
-              <div className="glass-box__content">
-                <div className="name">Dra. Isabella Rodrigues Tovar</div>
-                <div className="crm">CRM-GO 27286</div>
-              </div>
-              <div className="glass-box__overlay" />
-            </div>
+            <DoctorPhotoBadge />
           </div>
 
           {/* Content */}
