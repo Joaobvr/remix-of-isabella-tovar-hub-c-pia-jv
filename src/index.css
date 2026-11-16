@@ -715,27 +715,25 @@ html {
   pointer-events: none;
 }
 
-/* camada que distorce e desfoca o que está atrás */
+/* camada que distorce e desfoca o que está atrás (valores do snippet original) */
 .liquid-glass--bend {
   z-index: 0;
-  -webkit-backdrop-filter: blur(6px) saturate(140%);
-  backdrop-filter: blur(6px) saturate(140%);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
-/* corpo do vidro: leve brilho branco e sombra */
+/* corpo do vidro: só a sombra, sem cor por cima */
 .liquid-glass--face {
   z-index: 1;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.22));
-  box-shadow: 0 6px 18px rgba(46, 54, 38, 0.18), 0 0 14px rgba(46, 54, 38, 0.08);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15), 0 0 12px rgba(0, 0, 0, 0.08);
 }
 
 /* reflexo nas bordas */
 .liquid-glass--edge {
   z-index: 2;
   box-shadow:
-    inset 2px 2px 2px 0 rgba(255, 255, 255, 0.75),
-    inset -2px -2px 2px 0 rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.45);
+    inset 3px 3px 3px 0 rgba(255, 255, 255, 0.45),
+    inset -3px -3px 3px 0 rgba(255, 255, 255, 0.45);
 }
 
 .liquid-glass__content {

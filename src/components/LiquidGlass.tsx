@@ -14,7 +14,7 @@ type LiquidGlassProps = {
   distortion?: number;
 };
 
-const LiquidGlass = ({ children, className = "", style, distortion = 70 }: LiquidGlassProps) => {
+const LiquidGlass = ({ children, className = "", style, distortion = 200 }: LiquidGlassProps) => {
   const filterId = `glass-blur-${useId().replace(/:/g, "")}`;
 
   return (
