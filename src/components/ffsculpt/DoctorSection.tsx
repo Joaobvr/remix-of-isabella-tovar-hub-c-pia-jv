@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GraduationCap, Heart, Award, UserCheck } from "lucide-react";
 import doctorImage from "@/assets/ffsculpt/doctor-portrait.jpg";
+import LiquidGlass from "@/components/LiquidGlass";
 
 const pillars = [
   {
@@ -122,10 +123,10 @@ const DoctorSection = () => {
               className="w-full h-full"
               style={{ objectFit: "cover", objectPosition: "center top" }}
             />
-            <div className="name-badge">
+            <LiquidGlass className="name-badge">
               <div className="name">Dra. Isabella Rodrigues Tovar</div>
               <div className="crm">CRM-GO 27286</div>
-            </div>
+            </LiquidGlass>
           </div>
 
           {/* Content */}
