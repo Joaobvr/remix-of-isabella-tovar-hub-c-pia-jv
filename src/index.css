@@ -444,7 +444,7 @@
   }
   :where(.lp-ffsculpt) .name-badge .crm {
     font-size: 0.63rem;
-    color: var(--text-secondary-hex);
+    color: #5A554F;
     letter-spacing: 0.06em;
   }
 
