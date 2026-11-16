@@ -29,6 +29,7 @@ import {
 import draIsabellaPhoto from "@/assets/intima/dra-isabella.jpg";
 import PageHeader from "@/components/PageHeader";
 import NumberedCard from "@/components/NumberedCard";
+import SiteFooter from "@/components/SiteFooter";
 
 const WHATSAPP_AGENDAR =
   "https://wa.me/556296093076?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.";
@@ -362,31 +363,7 @@ function LandingPage() {
         </div>
       </Section>
 
-      {/* FOOTER */}
-      <footer className="px-6 md:px-10 py-10 border-t border-foreground/10">
-        <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-muted-foreground">
-          <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
-            <div className="flex items-center gap-2">
-              <FlowerMark className="w-5 h-5" />
-              <span className="font-serif text-sm text-foreground">
-                Dra. Isabella Tovar
-              </span>
-            </div>
-            <p>MÉDICA | CRM: 27286 GO</p>
-            <p>Atendimento em Goiânia ou Online</p>
-            <p>Clínica Despertar | Setor Marista</p>
-            <a
-              href="https://share.google/g2a78rGG9zWkHfMgu"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-foreground transition"
-            >
-              Ver localização no mapa
-            </a>
-          </div>
-          <p>© {new Date().getFullYear()} — Todos os direitos reservados.</p>
-        </div>
-      </footer>
+      <SiteFooter />
     </main>
   );
 }

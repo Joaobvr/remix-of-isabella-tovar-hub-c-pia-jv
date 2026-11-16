@@ -7,7 +7,7 @@ import ProtocolsSection from "@/components/injetaveis/ProtocolsSection";
 import CtaBand from "@/components/injetaveis/CtaBand";
 import AboutSection from "@/components/injetaveis/AboutSection";
 import FinalCta from "@/components/injetaveis/FinalCta";
-import Footer from "@/components/injetaveis/Footer";
+import SiteFooter from "@/components/SiteFooter";
 
 const TOPICS = [
   { label: "Sobre os protocolos", id: "sobre-protocolos" },
@@ -36,7 +36,7 @@ const Injetaveis = () => {
       <CtaBand />
       <AboutSection />
       <FinalCta />
-      <Footer />
+      <SiteFooter />
     </div>
   );
 };

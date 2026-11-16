@@ -1,6 +1,7 @@
-import { Activity, Sparkles, Heart, Syringe, Pill, Stethoscope, Instagram, MessageCircle, MapPin, Droplets, CalendarCheck } from "lucide-react";
+import { Activity, Sparkles, Heart, Syringe, Pill, Stethoscope, MapPin, Droplets, CalendarCheck } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
 import ServiceBanner from "@/components/ServiceBanner";
+import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
@@ -104,51 +105,9 @@ const Index = () => {
             </a>
           </Button>
         </div>
-
-        {/* Footer */}
-        <footer className="flex flex-col items-center gap-4 text-center">
-          <div className="flex items-center gap-5">
-            <a
-              href="https://www.instagram.com/dra.isabellatovar/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-card border border-border text-muted-foreground transition-colors hover:text-primary hover:border-accent"
-            >
-              <Instagram className="h-5 w-5" strokeWidth={1.6} />
-            </a>
-            <a
-              href={CONSULTA_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="WhatsApp"
-              onClick={trackContact}
-              className="flex h-10 w-10 items-center justify-center rounded-full bg-card border border-border text-muted-foreground transition-colors hover:text-primary hover:border-accent"
-            >
-              <MessageCircle className="h-5 w-5" strokeWidth={1.6} />
-            </a>
-          </div>
-
-          <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-            <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
-            <span>Atendimento em Goiânia GO e Online</span>
-          </div>
-
-          <a
-            href="https://share.google/g2a78rGG9zWkHfMgu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-primary"
-          >
-            <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
-            <span>Clínica Despertar | Setor Marista</span>
-          </a>
-
-          <p className="text-xs text-muted-foreground">
-            Dra. Isabella Tovar | CRM 27286 GO
-          </p>
-        </footer>
       </div>
+
+      <SiteFooter />
     </div>
   );
 };

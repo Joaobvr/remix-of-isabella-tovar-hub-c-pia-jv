@@ -5,7 +5,7 @@ import AboutSection from "@/components/emagrecimento/AboutSection";
 import DifferentialsSection from "@/components/emagrecimento/DifferentialsSection";
 import HowItWorksSection from "@/components/emagrecimento/HowItWorksSection";
 import FinalCTASection from "@/components/emagrecimento/FinalCTASection";
-import Footer from "@/components/emagrecimento/Footer";
+import SiteFooter from "@/components/SiteFooter";
 import PageHeader from "@/components/PageHeader";
 
 const WHATSAPP_URL = "https://wa.me/556296093076?text=Olá! Gostaria de agendar uma avaliação.";
@@ -37,7 +37,7 @@ const Emagrecimento = () => {
       <DifferentialsSection />
       <AboutSection />
       <FinalCTASection />
-      <Footer />
+      <SiteFooter />
     </div>
   );
 };

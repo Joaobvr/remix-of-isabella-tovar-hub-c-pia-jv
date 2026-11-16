@@ -5,7 +5,7 @@ import TechniqueSection from "@/components/ffsculpt/TechniqueSection";
 import DoctorSection from "@/components/ffsculpt/DoctorSection";
 import BeforeAfterSection from "@/components/ffsculpt/BeforeAfterSection";
 import ContactForm from "@/components/ffsculpt/ContactForm";
-import Footer from "@/components/ffsculpt/Footer";
+import SiteFooter from "@/components/SiteFooter";
 import { useFadeUp } from "@/hooks/use-fade-up";
 
 const TOPICS = [
@@ -36,7 +36,7 @@ const FFSculpt = () => {
       <TechniqueSection />
       <DoctorSection />
       <ContactForm />
-      <Footer />
+      <SiteFooter />
     </main>
   );
 };
