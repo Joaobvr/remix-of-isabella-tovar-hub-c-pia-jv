@@ -51,7 +51,7 @@ const Section = ({
   className?: string;
   children: React.ReactNode;
 }) => (
-  <section id={id} className={`px-6 md:px-10 py-20 md:py-28 ${className}`}>
+  <section id={id} className={`px-6 md:px-10 py-14 md:py-20 ${className}`}>
     <div className="mx-auto max-w-6xl">{children}</div>
   </section>
 );
@@ -78,7 +78,7 @@ function LandingPage() {
       <PageHeader topics={TOPICS} ctaHref={WHATSAPP_AGENDAR} />
 
       {/* 1. HERO */}
-      <section className="relative min-h-[100svh] flex items-center px-6 md:px-10 pt-12 pb-20">
+      <section className="relative md:min-h-[80svh] flex items-center px-6 md:px-10 pt-6 pb-10 md:pt-10 md:pb-16">
         <div
           className="absolute inset-0 -z-10"
           style={{
@@ -325,9 +325,9 @@ function LandingPage() {
       {/* 9. SEGURANÇA — removido */}
 
       {/* 10. CTA FINAL */}
-      <Section id="contato" className="pb-32">
+      <Section id="contato" className="pb-16 md:pb-20">
         <div
-          className="rounded-[2.5rem] md:rounded-[3rem] px-8 md:px-16 py-20 md:py-28 text-center relative overflow-hidden"
+          className="rounded-[2.5rem] md:rounded-[3rem] px-8 md:px-16 py-14 md:py-20 text-center relative overflow-hidden"
           style={{
             background:
               "radial-gradient(circle at 30% 20%, var(--peach-pink) 0%, transparent 50%), radial-gradient(circle at 70% 80%, var(--olive-green) 0%, transparent 60%), var(--secondary)",

@@ -214,7 +214,7 @@
 
 @layer utilities {
   :where(.lp-emagrecimento) .section-padding {
-    @apply px-6 py-20 md:px-12 lg:px-20 lg:py-28;
+    @apply px-6 py-14 md:px-12 md:py-16 lg:px-20 lg:py-20;
   }
 
   .animate-on-scroll {
@@ -377,13 +377,13 @@
   :where(.lp-ffsculpt) .btn-nav:hover { background-color: var(--rose-hex); color: #fff; }
 
   :where(.lp-ffsculpt) .section-padding {
-    padding: 72px 28px;
+    padding: 52px 24px;
   }
   @media (min-width: 768px) {
-    :where(.lp-ffsculpt) .section-padding { padding: 96px 60px; }
+    :where(.lp-ffsculpt) .section-padding { padding: 68px 60px; }
   }
   @media (min-width: 1024px) {
-    :where(.lp-ffsculpt) .section-padding { padding: 104px 80px; }
+    :where(.lp-ffsculpt) .section-padding { padding: 80px 80px; }
   }
 
   :where(.lp-ffsculpt) .container-narrow { @apply max-w-4xl mx-auto; }

@@ -29,9 +29,9 @@ const ProtocolsSection = () => {
   };
 
   return (
-    <section id="protocolos" className="py-24 px-6 md:px-12">
+    <section id="protocolos" className="py-14 md:py-20 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-14">
+        <div className="text-center mb-10">
           <p className="eyebrow mb-5">Objetivos que podem ser maximizados</p>
           <h2 className="section-heading title-sans text-[clamp(1.5rem,4.4vw,2.1rem)]">
             O que os protocolos{" "}

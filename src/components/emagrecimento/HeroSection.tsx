@@ -5,7 +5,7 @@ import heroImage from "@/assets/emagrecimento/hero-evolution.png";
 const WHATSAPP_URL = "https://wa.me/5562996093076?text=Olá! Gostaria de agendar uma avaliação.";
 
 const HeroSection = () => (
-  <section className="relative min-h-[90vh] flex items-center section-padding overflow-hidden">
+  <section className="relative md:min-h-[80vh] flex items-center section-padding overflow-hidden">
     {/* Hero background image */}
     <img
       src={heroImage}

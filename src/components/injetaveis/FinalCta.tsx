@@ -1,7 +1,7 @@
 import { Button } from "@/components/injetaveis/Button";
 
 const FinalCta = () => (
-  <section id="consulta" className="bg-charcoal py-28 px-6 md:px-12 text-center relative overflow-hidden">
+  <section id="consulta" className="bg-charcoal py-16 md:py-20 px-6 md:px-12 text-center relative overflow-hidden">
     {/* Decorative circles */}
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] rounded-full border border-primary/10 pointer-events-none" />
 
@@ -11,7 +11,7 @@ const FinalCta = () => (
         Seu protocolo <em className="italic text-sage-light">personalizado</em><br />
         começa aqui
       </h2>
-      <p className="text-[0.85rem] text-cream/85 mb-14 tracking-wide">
+      <p className="text-[0.85rem] text-cream/85 mb-10 tracking-wide">
         Agende sua consulta e descubra o tratamento ideal para o seu corpo.
       </p>
       <Button variant="sage" size="lg" className="cta-gradient ring-1 ring-cream/50 px-14 py-6 h-auto text-[0.78rem] tracking-[0.2em]" asChild>

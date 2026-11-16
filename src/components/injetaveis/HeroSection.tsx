@@ -3,7 +3,7 @@ import draIsabella from "@/assets/injetaveis/dra-isabella.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-10 pb-16 text-center">
+    <section className="md:min-h-[80vh] flex flex-col items-center justify-center px-6 pt-6 pb-10 md:pt-10 md:pb-16 text-center">
       {/* Hero Image */}
       <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden mb-10 shadow-lg animate-fade-in">
         <img
@@ -33,7 +33,7 @@ const HeroSection = () => {
       </div>
 
       {/* Subtitle tag */}
-      <p className="eyebrow mt-14 animate-fade-up-delay">Saúde, Beleza e Vitalidade</p>
+      <p className="eyebrow mt-10 animate-fade-up-delay">Saúde, Beleza e Vitalidade</p>
     </section>
   );
 };
