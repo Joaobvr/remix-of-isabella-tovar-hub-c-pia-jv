@@ -136,7 +136,7 @@ function LandingPage() {
               className="aspect-[4/5] rounded-[3rem] relative overflow-hidden"
               style={{
                 background:
-                  "linear-gradient(160deg, var(--secondary) 0%, var(--peach-pink) 100%)",
+                  "linear-gradient(160deg, hsl(var(--secondary)) 0%, var(--peach-pink) 100%)",
               }}
             >
               <div className="absolute inset-8 rounded-[2.5rem] border border-white/40" />
@@ -270,7 +270,7 @@ function LandingPage() {
               className="aspect-[4/5] rounded-[2.5rem] relative overflow-hidden flex items-end p-8"
               style={{
                 background:
-                  "linear-gradient(180deg, var(--secondary) 0%, var(--peach-pink) 100%)",
+                  "linear-gradient(180deg, hsl(var(--secondary)) 0%, var(--peach-pink) 100%)",
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center text-foreground/40">
