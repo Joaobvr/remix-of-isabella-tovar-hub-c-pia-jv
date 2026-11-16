@@ -717,7 +717,7 @@ html {
     inset 0 0 2px rgba(0, 0, 0, 0.8),
     0 4px 8px rgba(0, 0, 0, 0.2);
   /* um pouco de branco e desfoque a mais que no original, para o texto ficar legível sobre a foto */
-  background: rgba(255, 255, 255, 0.32);
+  background: rgba(245, 206, 196, 0.38); /* Rosa Chá bem suave, para contraste do texto */
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
