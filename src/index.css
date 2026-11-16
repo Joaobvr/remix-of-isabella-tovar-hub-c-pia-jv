@@ -431,9 +431,11 @@
   :where(.lp-ffsculpt) .name-badge {
     position: absolute;
     bottom: 18px;
-    right: 18px;
-    border-radius: 14px;
-    padding: 14px 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 30px;
+    text-align: center;
+    white-space: nowrap;
   }
   :where(.lp-ffsculpt) .name-badge .name {
     font-family: var(--font-display);
@@ -699,44 +701,71 @@ html {
   box-shadow: 0 1px 2px rgba(46, 54, 38, 0.04), 0 8px 24px -16px rgba(46, 54, 38, 0.1);
 }
 
-/* ===== Efeito liquid glass (componente LiquidGlass) ===== */
-/* o elemento precisa ter position (relative/absolute) definida por quem usa */
-.liquid-glass {
-  isolation: isolate;
-  overflow: hidden;
+
+/* ===== Vidro "glass box" (baseado no snippet do botão "Get started") ===== */
+.glass-box {
+  --r: 9999px;
+  --tr: 15%;
+  z-index: 5;
+  border-radius: var(--r);
+  border: 1px double rgba(51, 51, 51, 0.08);
+  box-shadow:
+    inset 2px -2px 1px -1px rgba(255, 255, 255, 0.9),
+    inset -2px 2px 1px -1px rgba(255, 255, 255, 0.9),
+    inset 6px -6px 1px -6px rgba(255, 255, 255, 0.55),
+    inset -6px 6px 1px -6px rgba(255, 255, 255, 0.55),
+    inset 0 0 2px rgba(0, 0, 0, 0.8),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.02);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  filter: brightness(0.9);
 }
 
-.liquid-glass--bend,
-.liquid-glass--face,
-.liquid-glass--edge {
+/* sombra escura difusa por baixo */
+.glass-box::before {
+  content: "";
   position: absolute;
-  inset: 0;
-  border-radius: inherit;
+  z-index: 1;
+  top: 35%;
+  left: 8px;
+  right: 8px;
+  height: calc(100% - 16px);
+  border-radius: var(--r);
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  filter: blur(8px);
   pointer-events: none;
 }
 
-/* camada que distorce e desfoca o que está atrás (valores do snippet original) */
-.liquid-glass--bend {
-  z-index: 0;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-}
-
-/* corpo do vidro: só a sombra, sem cor por cima */
-.liquid-glass--face {
-  z-index: 1;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15), 0 0 12px rgba(0, 0, 0, 0.08);
-}
-
-/* reflexo nas bordas */
-.liquid-glass--edge {
-  z-index: 2;
-  box-shadow:
-    inset 3px 3px 3px 0 rgba(255, 255, 255, 0.45),
-    inset -3px -3px 3px 0 rgba(255, 255, 255, 0.45);
-}
-
-.liquid-glass__content {
-  position: relative;
+/* reflexos brancos nos cantos */
+.glass-box::after {
+  content: "";
+  position: absolute;
   z-index: 3;
+  inset: 0;
+  border-radius: var(--r);
+  filter: blur(7px);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    transparent var(--tr),
+    transparent calc(100% - var(--tr)),
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  pointer-events: none;
+}
+
+.glass-box__overlay {
+  position: absolute;
+  inset: 4.5px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--r);
+  filter: blur(1px);
+  pointer-events: none;
+}
+
+.glass-box__content {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 25px 3px rgba(102, 102, 102, 0.15));
 }
