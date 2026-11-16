@@ -83,7 +83,7 @@ const ProtocolsSection = () => {
                     <div
                       onClick={() => toggle(index)}
                       className={cn(
-                        "cursor-pointer select-none bg-cream-dark rounded-xl px-5 py-4 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5",
+                        "cursor-pointer select-none brand-card rounded-xl px-5 py-4 transition-all duration-200 hover:shadow-md hover:-translate-y-0.5",
                         isOpen && "sm:shadow-md sm:-translate-y-0.5"
                       )}
                     >

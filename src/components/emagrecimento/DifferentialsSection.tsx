@@ -29,7 +29,7 @@ const DifferentialsSection = () => (
         {pillars.map(({ icon: Icon, label }, i) => (
           <div
             key={label}
-            className="animate-on-scroll group bg-background rounded-xl p-4 border border-border/60 hover:border-gold/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-gold/5 text-center"
+            className="animate-on-scroll group brand-card rounded-xl p-4 hover:border-gold/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-gold/5 text-center"
             style={{ transitionDelay: `${i * 60}ms` }}
           >
             <div className="icon-circle w-9 h-9 mb-2 mx-auto">

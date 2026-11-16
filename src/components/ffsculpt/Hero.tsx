@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
 
       {/* Content below */}
-      <div style={{ background: "#FAF7F4", padding: "36px 28px 60px" }}>
+      <div style={{ background: "var(--cream-hex)", padding: "36px 28px 60px" }}>
         <div className="max-w-xl">
           <span className="eyebrow mb-3">Método FFSculpt · Goiânia</span>
           <h1 className="heading-hero title-sans mt-3 text-[clamp(1.6rem,4.6vw,2.4rem)]" style={{ lineHeight: 1.25 }}>

@@ -179,9 +179,9 @@
 /* ===== Página Emagrecimento (/emagrecimento) =====
    Cores próprias da landing, aplicadas só dentro dela */
 .lp-emagrecimento {
-  --background: 30 33% 97%;
+  --background: 22.5 26.7% 94.1%;
   --foreground: 30 10% 20%;
-  --card: 30 25% 95%;
+  --card: 24 38.5% 97.5%;
   --card-foreground: 30 10% 20%;
   --primary: 80 13.4% 43.9%;
   --primary-foreground: 30 33% 97%;
@@ -191,15 +191,15 @@
   --muted-foreground: 30 8% 50%;
   --accent: 38 38% 59%;
   --accent-foreground: 30 33% 97%;
-  --border: 30 15% 85%;
-  --input: 30 15% 85%;
+  --border: 27.3 18.6% 88.4%;
+  --input: 27.3 18.6% 88.4%;
   --ring: 80 13.4% 43.9%;
   --radius: 0.75rem;
   --nude: 25 30% 90%;
   --olive: 80 13.4% 43.9%;
   --rose: 0 25% 80%;
   --gold: 11.7 30% 47.1%; /* antes dourado; agora Terracota Suave */
-  --cream: 30 33% 97%;
+  --cream: 22.5 26.7% 94.1%;
 
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -233,8 +233,8 @@
    Estilos próprios da landing, aplicados só dentro dela */
 .lp-ffsculpt {
     /* === Premium Editorial Palette === */
-    --cream-hex: #FAF7F4;
-    --warm-white-hex: #FFFFFF;
+    --cream-hex: #F4EFEC;
+    --warm-white-hex: #FBF8F6;
     --text-primary-hex: #1C1B19;
     --text-secondary-hex: #7A736C;
     --text-tertiary-hex: #A8A09A;
@@ -242,15 +242,15 @@
     --rose-hover-hex: #86533F;
     --rose-light-hex: #F5E9E4;
     --champagne-hex: #9C6254; /* antes dourado; agora Terracota Suave */
-    --champagne-light-hex: #F5E9E4;
+    --champagne-light-hex: #FBF8F6;
     --champagne-line-hex: #DDBFB5;
-    --border-hex: #EDE7DF;
+    --border-hex: #E7E1DC;
     --dark-hex: #2A2521;
 
     /* HSL tokens for tailwind/shadcn */
-    --background: 30 25% 97%;
+    --background: 22.5 26.7% 94.1%;
     --foreground: 40 8% 10%;
-    --card: 0 0% 100%;
+    --card: 24 38.5% 97.5%;
     --card-foreground: 40 8% 10%;
     --popover: 0 0% 100%;
     --popover-foreground: 40 8% 10%;
@@ -264,15 +264,15 @@
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 35 22% 90%;
-    --input: 35 22% 90%;
+    --border: 27.3 18.6% 88.4%;
+    --input: 27.3 18.6% 88.4%;
     --ring: 11.7 30% 47.1%;
     --radius: 0.5rem;
 
     --font-display: "Cormorant Garamond", Georgia, serif;
     --font-body: "Montserrat", system-ui, sans-serif;
 
-    --cream: 30 33% 97%;
+    --cream: 22.5 26.7% 94.1%;
 
   background-color: var(--cream-hex);
   color: var(--text-primary-hex);
@@ -514,24 +514,24 @@
 /* ===== Página Terapias Injetáveis (/injetaveis) =====
    Estilos próprios da landing, aplicados só dentro dela */
 .lp-injetaveis {
-  --background: 36 33% 96%;
+  --background: 22.5 26.7% 94.1%;
   --foreground: 80 10% 14%;
-  --card: 36 33% 96%;
+  --card: 24 38.5% 97.5%;
   --card-foreground: 80 10% 14%;
-  --popover: 36 33% 96%;
+  --popover: 24 38.5% 97.5%;
   --popover-foreground: 80 10% 14%;
   --primary: 80 13.4% 43.9%;
   --primary-foreground: 36 33% 97%;
   --secondary: 20 45% 88%;
   --secondary-foreground: 80 10% 14%;
-  --muted: 36 20% 91%;
+  --muted: 24 38.5% 97.5%;
   --muted-foreground: 80 6% 38%;
   --accent: 18 55% 82%;
   --accent-foreground: 80 12% 18%;
   --destructive: 0 70% 55%;
   --destructive-foreground: 36 33% 97%;
-  --border: 36 18% 86%;
-  --input: 36 18% 86%;
+  --border: 27.3 18.6% 88.4%;
+  --input: 27.3 18.6% 88.4%;
   --ring: 80 13.4% 43.9%;
   --radius: 12px;
   --sage: 80 13.4% 43.9%;
@@ -539,9 +539,9 @@
   --sage-light: 83 13% 88%;
   --peach: 18 55% 82%;
   --peach-dark: 16 45% 70%;
-  --cream: 36 33% 96%;
-  --cream-dark: 36 22% 90%;
-  --warm: 30 22% 93%;
+  --cream: 22.5 26.7% 94.1%;
+  --cream-dark: 24 38.5% 97.5%;
+  --warm: 24 38.5% 97.5%;
   --deep: 80 12% 16%;
   --charcoal: 80 13.4% 43.9%;
   --font-serif: "Cormorant Garamond", serif;
@@ -590,24 +590,24 @@
 /* ===== Página Harmonização Íntima (/intima) =====
    Estilos próprios da landing, aplicados só dentro dela */
 .lp-intima {
-  --background: 43.9 40.1% 97.6%;
+  --background: 22.5 26.7% 94.1%;
   --foreground: 74.3 32.8% 18.4%;
-  --card: 0 0% 100%;
+  --card: 24 38.5% 97.5%;
   --card-foreground: 74.3 32.8% 18.4%;
-  --popover: 0 0% 100%;
+  --popover: 24 38.5% 97.5%;
   --popover-foreground: 74.3 32.8% 18.4%;
   --primary: 80 13.4% 43.9%;
   --primary-foreground: 43.9 40.1% 97.6%;
-  --secondary: 43.8 31.5% 90.8%;
+  --secondary: 24 38.5% 97.5%;
   --secondary-foreground: 74.3 32.8% 18.4%;
-  --muted: 43.8 31.5% 90.8%;
+  --muted: 24 38.5% 97.5%;
   --muted-foreground: 76.7 9.1% 41.8%;
   --accent: 18.2 58.9% 85%;
   --accent-foreground: 74.3 32.8% 18.4%;
   --destructive: 357.2 100% 45.3%;
   --destructive-foreground: 210 34.5% 98%;
-  --border: 64.1 19.1% 84.7%;
-  --input: 64.1 19.1% 84.7%;
+  --border: 27.3 18.6% 88.4%;
+  --input: 27.3 18.6% 88.4%;
   --ring: 80 13.4% 43.9%;
   --radius: 1rem;
   --peach-pink: #EFD0C2;
@@ -687,4 +687,18 @@ html {
   .cta-gradient {
     animation: none;
   }
+}
+
+/* ===== Card padrão do site (mesmo estilo dos cards da página inicial) ===== */
+.brand-card {
+  background: linear-gradient(135deg, #FBF8F6, #F4EFEC);
+  border: 1px solid #E7E1DC;
+  box-shadow: 0 1px 2px rgba(46, 54, 38, 0.04), 0 8px 24px -16px rgba(46, 54, 38, 0.1);
+}
+
+/* Cards do FF Sculpt seguem o mesmo padrão */
+:where(.lp-ffsculpt) .card-soft {
+  background: linear-gradient(135deg, #FBF8F6, #F4EFEC);
+  border: 1px solid #E7E1DC;
+  box-shadow: 0 1px 2px rgba(46, 54, 38, 0.04), 0 8px 24px -16px rgba(46, 54, 38, 0.1);
 }

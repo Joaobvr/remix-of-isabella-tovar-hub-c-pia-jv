@@ -108,7 +108,7 @@ const ContactForm = () => {
 
         <form
           onSubmit={handleSubmit}
-          className="bg-warm-white border border-brand"
+          className="brand-card"
           style={{ borderRadius: 16, padding: "32px 24px" }}
         >
           <div className="grid md:grid-cols-2 gap-6">
