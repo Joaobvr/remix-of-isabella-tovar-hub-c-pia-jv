@@ -24,10 +24,10 @@ import {
   RejuvenationIllustration,
   RetractionIllustration,
   ComfortIllustration,
-  FlowerMark,
 } from "@/components/intima/Illustrations";
 import draIsabellaPhoto from "@/assets/intima/dra-isabella.jpg";
 import PageHeader from "@/components/PageHeader";
+import lotus from "@/assets/brand/lotus.png";
 import NumberedCard from "@/components/NumberedCard";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -142,7 +142,7 @@ function LandingPage() {
             >
               <div className="absolute inset-8 rounded-[2.5rem] border border-white/40" />
               <div className="absolute bottom-10 left-10 right-10 text-foreground/80">
-                <FlowerMark className="w-10 h-10 mb-4" />
+                <img src={lotus} alt="" className="h-12 w-auto mb-4" />
                 <p className="font-serif text-2xl italic leading-snug">
                   "A saúde da mulher começa pela forma como ela se sente
                   consigo mesma."
@@ -333,7 +333,7 @@ function LandingPage() {
               "radial-gradient(circle at 30% 20%, var(--peach-pink) 0%, transparent 50%), radial-gradient(circle at 70% 80%, var(--olive-green) 0%, transparent 60%), var(--secondary)",
           }}
         >
-          <FlowerMark className="w-12 h-12 mx-auto mb-8 opacity-60" />
+          <img src={lotus} alt="" className="h-14 w-auto mx-auto mb-8" />
           <h2 className="title-sans text-[clamp(1.7rem,5vw,2.6rem)] max-w-3xl mx-auto">
             Cuidar da sua intimidade também é{" "}
             <em className="italic text-[#4A543B]">cuidar de você</em>.
