@@ -1,4 +1,5 @@
-import heroBg from "@/assets/ffsculpt/hero-bg.png";
+import heroBg from "@/assets/ffsculpt/hero-bg.webp";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 
 const scrollToForm = () => {
   if (typeof (window as any).fbq === "function") {
@@ -12,10 +13,12 @@ const Hero = () => {
     <section className="relative bg-cream pt-4">
       {/* Photo on top */}
       <div className="relative w-full">
-        <img
+        <SkeletonImage
+          wrapperClassName="hero-illustration w-full"
           src={heroBg}
           alt="Ilustração Método FFSculpt"
-          className="hero-illustration w-full block"
+          className="w-full h-full block"
+          {...({ fetchpriority: "high" } as Record<string, string>)}
           style={{
             objectFit: "cover",
             objectPosition: "center top",

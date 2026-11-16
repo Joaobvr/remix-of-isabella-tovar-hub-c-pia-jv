@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GraduationCap, Heart, Award, UserCheck } from "lucide-react";
 import doctorImage from "@/assets/ffsculpt/doctor-portrait.jpg";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 
 const pillars = [
@@ -117,7 +118,9 @@ const DoctorSection = () => {
               aspectRatio: "3 / 4",
             }}
           >
-            <img
+            <SkeletonImage
+              fill
+              loading="lazy"
               src={doctorImage}
               alt="Dra. Isabella Rodrigues Tovar"
               className="w-full h-full"

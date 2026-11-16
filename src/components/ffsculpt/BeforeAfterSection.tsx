@@ -1,3 +1,5 @@
+import { SkeletonImage, SkeletonVideo } from "@/components/SkeletonMedia";
+
 const scrollToForm = () => {
   if (typeof (window as any).fbq === "function") {
     (window as any).fbq("track", "Lead");
@@ -10,7 +12,7 @@ type ImageCard = { kind: "image"; src: string; alt: string; region: string; tag:
 
 const cards: Array<VideoCard | ImageCard> = [
   { kind: "video", src: "/ffsculpt/videos/before-after-1.mp4", region: "Tronco", tag: "Resultado" },
-  { kind: "image", src: "/ffsculpt/images/before-after-2.png", alt: "Resultado antes e depois - Abdômen", region: "Abdômen", tag: "Antes · Depois" },
+  { kind: "image", src: "/ffsculpt/images/before-after-2.webp", alt: "Resultado antes e depois - Abdômen", region: "Abdômen", tag: "Antes · Depois" },
   { kind: "video", src: "/ffsculpt/videos/before-after-3.mp4", region: "Pernas", tag: "Resultado" },
   { kind: "image", src: "/ffsculpt/images/before-after-4.jpg", alt: "Resultado antes e depois - Redução de Medidas", region: "Redução de medidas", tag: "Antes · Depois" },
   { kind: "image", src: "/ffsculpt/images/before-after-5.jpg", alt: "Resultado antes e depois - Redução de Gordura", region: "Redução de gordura", tag: "Antes · Depois" },
@@ -71,8 +73,9 @@ const BeforeAfterSection = () => {
             >
               <div className="relative" style={{ aspectRatio: "1 / 1" }}>
                 {c.kind === "video" ? (
-                  <video
-                    className="absolute inset-0 w-full h-full"
+                  <SkeletonVideo
+                    fill
+                    className="w-full h-full"
                     style={{ objectFit: "cover" }}
                     controls
                     playsInline
@@ -81,10 +84,12 @@ const BeforeAfterSection = () => {
                   />
                 ) : (
                   <>
-                    <img
+                    <SkeletonImage
+                      fill
+                      loading="lazy"
                       src={c.src}
                       alt={c.alt}
-                      className="absolute inset-0 w-full h-full"
+                      className="w-full h-full"
                       style={{ objectFit: "cover", objectPosition: "center" }}
                     />
                     {/* center separator for paired before/after */}

@@ -1,5 +1,6 @@
 import { Button } from "@/components/injetaveis/Button";
 import draIsabella from "@/assets/injetaveis/dra-isabella.jpg";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 
 const AboutSection = () => (
@@ -8,7 +9,7 @@ const AboutSection = () => (
       {/* Image */}
       <div className="relative flex flex-col items-center">
         <div className="relative w-full max-w-md aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
-          <img src={draIsabella} alt="Dra. Isabella Tovar" className="w-full h-full object-cover object-top" />
+          <SkeletonImage fill loading="lazy" src={draIsabella} alt="Dra. Isabella Tovar" className="w-full h-full object-cover object-top" />
           <DoctorPhotoBadge />
         </div>
       </div>

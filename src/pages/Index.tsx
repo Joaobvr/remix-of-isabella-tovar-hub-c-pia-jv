@@ -1,5 +1,6 @@
 import { Activity, Sparkles, Heart, Syringe, Pill, Stethoscope, MapPin, Droplets, CalendarCheck } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 import ServiceBanner from "@/components/ServiceBanner";
 import SiteFooter from "@/components/SiteFooter";
 import { Button } from "@/components/ui/button";
@@ -30,10 +31,12 @@ const Index = () => {
           {/* Photo with gradient fade and overlaid name */}
           <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw]">
             {/* A foto some suavemente no fundo (máscara), sem faixa de corte */}
-            <img
+            <SkeletonImage
+              wrapperClassName="w-full aspect-square"
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="w-full h-auto"
+              className="w-full h-full object-cover"
+              {...({ fetchpriority: "high" } as Record<string, string>)}
               style={{
                 WebkitMaskImage:
                   "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0.35) 85%, transparent 100%)",

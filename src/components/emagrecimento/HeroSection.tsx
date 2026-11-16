@@ -1,16 +1,20 @@
 import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/emagrecimento/hero-evolution.png";
+import heroImage from "@/assets/emagrecimento/hero-evolution.webp";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 
 const WHATSAPP_URL = "https://wa.me/5562996093076?text=Olá! Gostaria de agendar uma avaliação.";
 
 const HeroSection = () => (
   <section className="relative md:min-h-[80vh] flex items-center section-padding overflow-hidden">
     {/* Hero background image */}
-    <img
+    <SkeletonImage
+      fill
+      wrapperStyle={{ zIndex: 0 }}
       src={heroImage}
       alt="Evolução corporal feminina"
-      className="absolute inset-0 w-full h-full object-cover object-center z-0"
+      className="w-full h-full object-cover object-center"
+      {...({ fetchpriority: "high" } as Record<string, string>)}
     />
     {/* Overlay for text readability */}
     <div className="absolute inset-0 bg-background/40 z-0" />

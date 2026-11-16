@@ -1,12 +1,15 @@
 import { Button } from "@/components/injetaveis/Button";
 import draIsabella from "@/assets/injetaveis/dra-isabella-topo.jpg";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 
 const HeroSection = () => {
   return (
     <section className="md:min-h-[80vh] flex flex-col items-center justify-center px-6 pt-6 pb-10 md:pt-10 md:pb-16 text-center">
       {/* Hero Image */}
-      <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden mb-10 shadow-lg animate-fade-in">
-        <img
+      <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden mb-10 shadow-lg animate-fade-in">
+        <SkeletonImage
+          fill
+          {...({ fetchpriority: "high" } as Record<string, string>)}
           src={draIsabella}
           alt="Dra. Isabella Tovar"
           className="w-full h-full object-cover object-top"

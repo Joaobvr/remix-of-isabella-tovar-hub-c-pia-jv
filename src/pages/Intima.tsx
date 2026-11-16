@@ -29,6 +29,7 @@ import draIsabellaPhoto from "@/assets/intima/dra-isabella.jpg";
 import PageHeader from "@/components/PageHeader";
 import lotus from "@/assets/brand/lotus.png";
 import NumberedCard from "@/components/NumberedCard";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -276,10 +277,12 @@ function LandingPage() {
               }}
             >
               <div className="absolute inset-0 flex items-center justify-center text-foreground/40">
-                <img
+                <SkeletonImage
+                  fill
+                  loading="lazy"
                   src={draIsabellaPhoto}
                   alt="Dra. Isabella Tovar"
-                  className="absolute inset-0 w-full h-full object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <DoctorPhotoBadge />

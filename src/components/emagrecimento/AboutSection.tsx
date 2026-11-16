@@ -1,4 +1,5 @@
 import draIsabella from "@/assets/emagrecimento/dra-isabella.jpg";
+import { SkeletonImage } from "@/components/SkeletonMedia";
 import DoctorPhotoBadge from "@/components/DoctorPhotoBadge";
 
 const AboutSection = () => (
@@ -9,7 +10,7 @@ const AboutSection = () => (
         <div className="animate-on-scroll order-2 lg:order-1">
           <div className="relative">
             <div className="relative w-full aspect-[3/4] rounded-3xl overflow-hidden border border-border/40">
-              <img src={draIsabella} alt="Dra. Isabella Tovar" className="w-full h-full object-cover" />
+              <SkeletonImage fill loading="lazy" src={draIsabella} alt="Dra. Isabella Tovar" className="w-full h-full object-cover" />
               <DoctorPhotoBadge />
             </div>
             <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full bg-gold/10 -z-10" />
