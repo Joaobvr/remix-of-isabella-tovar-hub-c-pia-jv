@@ -135,13 +135,13 @@ const Index = () => {
           </div>
 
           <a
-            href="https://maps.app.goo.gl/TSMGRL7jCHvG4TXN9?g_st=ac"
+            href="https://share.google/g2a78rGG9zWkHfMgu"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-primary"
           >
             <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
-            <span>Clínica Vizz | Setor Marista</span>
+            <span>Clínica Despertar | Saúde e Estética</span>
           </a>
 
           <p className="text-xs text-muted-foreground">

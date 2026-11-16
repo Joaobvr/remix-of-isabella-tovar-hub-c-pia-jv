@@ -374,9 +374,9 @@ function LandingPage() {
             </div>
             <p>MÉDICA | CRM: 27286 GO</p>
             <p>Atendimento em Goiânia ou Online</p>
-            <p>Vizz Clinic | Setor Marista</p>
+            <p>Clínica Despertar | Saúde e Estética</p>
             <a
-              href="https://maps.app.goo.gl/TSMGRL7jCHvG4TXN9?g_st=ac"
+              href="https://share.google/g2a78rGG9zWkHfMgu"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-foreground transition"
