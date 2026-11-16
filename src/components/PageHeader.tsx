@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { ArrowRight, Home, Instagram } from "lucide-react";
 import {
   Sheet,
@@ -8,6 +9,14 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import lotus from "@/assets/brand/lotus.png";
+
+/** Páginas de tratamento, para a seção "Outros tratamentos" do menu */
+const TREATMENTS = [
+  { label: "Emagrecimento e Recomposição Corporal", path: "/emagrecimento" },
+  { label: "FF Sculpt | Harmonização Corporal", path: "/ffsculpt" },
+  { label: "Regeneração e Estética Íntima", path: "/intima" },
+  { label: "Terapias Injetáveis", path: "/injetaveis" },
+];
 
 /*
  * Barra fixa do topo das páginas de tratamento:
@@ -58,6 +67,8 @@ const PageHeader = ({
   ctaPixelEvent = "Contact",
 }: PageHeaderProps) => {
   const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  const otherTreatments = TREATMENTS.filter((t) => t.path !== pathname.replace(/\/$/, ""));
 
   // Fecha o menu e, depois da animação, leva até o tópico
   const goTo = (id: string) => {
@@ -174,6 +185,36 @@ const PageHeader = ({
                     </li>
                   ))}
                 </ul>
+
+                {/* Outros tratamentos */}
+                <div className="mt-6 px-3 pb-2">
+                  <p
+                    className="mb-1 text-[0.68rem] font-medium uppercase tracking-[0.25em]"
+                    style={{ color: BRAND.terracota }}
+                  >
+                    Outros tratamentos
+                  </p>
+                  <ul>
+                    {otherTreatments.map((t) => (
+                      <li key={t.path} className="border-b last:border-b-0" style={{ borderColor: "rgba(156, 98, 84, 0.18)" }}>
+                        <a href={t.path} className="group flex w-full items-center justify-between gap-4 py-3.5 text-left">
+                          <span
+                            className="text-[0.9rem] font-normal leading-snug transition-opacity group-hover:opacity-75"
+                            style={{ fontFamily: "'Montserrat', sans-serif", color: BRAND.ink }}
+                          >
+                            {t.label}
+                          </span>
+                          <span className="arrow-glass h-7 w-7">
+                            <ArrowRight
+                              className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5"
+                              strokeWidth={1.8}
+                            />
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </nav>
 
               <div className="space-y-3 border-t px-7 py-6" style={{ borderColor: "rgba(156, 98, 84, 0.15)" }}>
