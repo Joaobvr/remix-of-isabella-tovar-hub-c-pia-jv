@@ -44,7 +44,7 @@ const Footer = () => {
               style={{ fontSize: "0.85rem", color: "rgba(255,255,255,0.6)" }}
             >
               <MapPin size={16} strokeWidth={1.2} style={{ color: "var(--champagne-hex)" }} />
-              Clínica Despertar | Saúde e Estética
+              Clínica Despertar | Setor Marista
             </a>
           </div>
 

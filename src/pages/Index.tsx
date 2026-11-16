@@ -141,7 +141,7 @@ const Index = () => {
             className="flex items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-primary"
           >
             <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
-            <span>Clínica Despertar | Saúde e Estética</span>
+            <span>Clínica Despertar | Setor Marista</span>
           </a>
 
           <p className="text-xs text-muted-foreground">

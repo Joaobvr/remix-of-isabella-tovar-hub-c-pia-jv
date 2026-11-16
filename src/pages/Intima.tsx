@@ -374,7 +374,7 @@ function LandingPage() {
             </div>
             <p>MÉDICA | CRM: 27286 GO</p>
             <p>Atendimento em Goiânia ou Online</p>
-            <p>Clínica Despertar | Saúde e Estética</p>
+            <p>Clínica Despertar | Setor Marista</p>
             <a
               href="https://share.google/g2a78rGG9zWkHfMgu"
               target="_blank"
