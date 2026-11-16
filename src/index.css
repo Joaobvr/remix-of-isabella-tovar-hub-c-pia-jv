@@ -442,11 +442,12 @@
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 3px;
-    color: var(--text-primary-hex);
+    color: #3F4535; /* verde escuro */
   }
   :where(.lp-ffsculpt) .name-badge .crm {
     font-size: 0.63rem;
-    color: #5A554F;
+    color: #F4EFEC; /* Off-White Rosado */
+    text-shadow: 0 1px 2px rgba(63, 69, 53, 0.45); /* sombra leve para o off-white não sumir no vidro claro */
     letter-spacing: 0.06em;
   }
 
