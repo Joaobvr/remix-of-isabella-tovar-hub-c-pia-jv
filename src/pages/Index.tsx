@@ -28,16 +28,16 @@ const Index = () => {
         <header className="mb-10 min-h-screen flex flex-col -mt-10 sm:-mt-16 md:-mt-20 pb-6">
           {/* Photo with gradient fade and overlaid name */}
           <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw]">
+            {/* A foto some suavemente no fundo (máscara), sem faixa de corte */}
             <img
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
               className="w-full h-auto"
-            />
-            <div
-              className="absolute inset-0 pointer-events-none"
               style={{
-                background:
-                  "linear-gradient(to top, hsl(var(--background)) 0%, hsl(var(--background) / 0.7) 10%, hsl(var(--background) / 0.2) 20%, transparent 25%)",
+                WebkitMaskImage:
+                  "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0.35) 85%, transparent 100%)",
+                maskImage:
+                  "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0.35) 85%, transparent 100%)",
               }}
             />
           </div>
