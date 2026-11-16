@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { ArrowRight, Home, Instagram } from "lucide-react";
+import { ArrowRight, Home, Instagram, MapPin } from "lucide-react";
 import {
   Sheet,
   SheetContent,
@@ -255,6 +255,15 @@ const PageHeader = ({
                     className="icon-circle h-11 w-11 transition-transform duration-200 hover:scale-105"
                   >
                     <Instagram className="h-5 w-5" strokeWidth={1.6} />
+                  </a>
+                  <a
+                    href="https://share.google/g2a78rGG9zWkHfMgu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Localização da Clínica Despertar no mapa"
+                    className="icon-circle h-11 w-11 transition-transform duration-200 hover:scale-105"
+                  >
+                    <MapPin className="h-5 w-5" strokeWidth={1.6} />
                   </a>
                 </div>
               </div>
