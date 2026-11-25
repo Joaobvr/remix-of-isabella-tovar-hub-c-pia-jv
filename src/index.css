@@ -772,7 +772,7 @@ html {
 }
 @media (min-width: 768px) {
   .home-photo-mask {
-    -webkit-mask-image: radial-gradient(ellipse 50% 50% at 50% 45%, #000 62%, rgba(0,0,0,0.6) 82%, transparent 100%);
-    mask-image: radial-gradient(ellipse 50% 50% at 50% 45%, #000 62%, rgba(0,0,0,0.6) 82%, transparent 100%);
+    -webkit-mask-image: radial-gradient(closest-side at 50% 48%, #000 62%, rgba(0,0,0,0.55) 82%, transparent 100%);
+    mask-image: radial-gradient(closest-side at 50% 48%, #000 62%, rgba(0,0,0,0.55) 82%, transparent 100%);
   }
 }

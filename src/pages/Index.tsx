@@ -29,7 +29,7 @@ const Index = () => {
         {/* Header */}
         <header className="mb-10 min-h-screen flex flex-col -mt-10 sm:-mt-16 md:-mt-20 pb-6">
           {/* Photo with gradient fade and overlaid name */}
-          <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw] md:static md:mx-auto md:mt-10 md:w-[min(560px,62vh)] md:max-w-none">
+          <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw] md:static md:mx-auto md:w-[min(680px,78vh)] md:max-w-none">
             {/* A foto some suavemente no fundo (máscara), sem faixa de corte */}
             <SkeletonImage
               wrapperClassName="w-full aspect-square"
