@@ -49,7 +49,7 @@ const SiteFooter = () => (
           Médica | CRM 27286 GO
         </p>
         <p className="mt-1 text-[0.8rem]" style={{ color: COLORS.accent }}>
-          Saúde, Longevidade e Beleza Feminina
+          Saúde, Longevidade e Beleza
         </p>
       </div>
 
