@@ -24,25 +24,19 @@ const services = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-brand-gradient">
+    <div className="min-h-screen bg-brand-gradient overflow-x-clip">
       <div className="mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl px-5 sm:px-8 md:px-12 py-10 sm:py-16 md:py-20 animate-page-fade-in">
         {/* Header */}
         <header className="mb-10 min-h-screen flex flex-col -mt-10 sm:-mt-16 md:-mt-20 pb-6">
           {/* Photo with gradient fade and overlaid name */}
-          <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw]">
+          <div className="relative overflow-hidden left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen max-w-[100vw] md:static md:mx-auto md:mt-10 md:w-[min(560px,62vh)] md:max-w-none">
             {/* A foto some suavemente no fundo (máscara), sem faixa de corte */}
             <SkeletonImage
               wrapperClassName="w-full aspect-square"
               src={profilePhoto}
               alt="Dra. Isabella Tovar"
-              className="w-full h-full object-cover"
+              className="home-photo-mask w-full h-full object-cover"
               {...({ fetchpriority: "high" } as Record<string, string>)}
-              style={{
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0.35) 85%, transparent 100%)",
-                maskImage:
-                  "linear-gradient(to bottom, #000 0%, #000 55%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0.35) 85%, transparent 100%)",
-              }}
             />
           </div>
 
