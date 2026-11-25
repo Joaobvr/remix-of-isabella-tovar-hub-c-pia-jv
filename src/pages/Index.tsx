@@ -61,7 +61,7 @@ const Index = () => {
             </p>
 
             <p className="max-w-sm sm:max-w-md md:max-w-lg text-base sm:text-lg md:text-xl leading-relaxed text-foreground">
-              Acompanho mulheres em todas as fases da vida, com tratamentos personalizados e um cuidado próximo.
+              Acompanho cada paciente em todas as fases da vida, com tratamentos personalizados e um cuidado próximo.
             </p>
 
             <p className="max-w-sm sm:max-w-md md:max-w-lg text-sm sm:text-base font-light tracking-wide leading-relaxed text-foreground italic">
